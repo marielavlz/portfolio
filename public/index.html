@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mariela Velez | Full Stack Web Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="description" content="The portfolio of Mariela Velez">
+  <meta name="keywords" content="mariela velez, mariela, web, website, websites, freelance, responsive, mobile, mobile design, development, responsive development, web development, unique, fun, developer">
+  <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/animations.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/colorbox.css" />
+ 	<!--JQuery Library-->
+ 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	<!--Bootstrap CSS-->
+ 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Fredericka+the+Great|Love+Ya+Like+A+Sister|Open+Sans|Quicksand|Raleway|Ribeye+Marrow" rel="stylesheet">
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
+
+<script src="js/jquery.colorbox.js"></script>
+<script>
+	$(document).ready(function(){
+	$(".inline").colorbox({inline:true, width:"53%"});
+	});
+</script>
+<script type="text/javascript" src="js/javascript.js"> </script>
+<script type="text/javascript" src="js/javascript2.js"> </script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30836227-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script>
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 2;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+
+    lastScrollTop = st;
+}
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#designIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#developmentIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn2");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#newsletterIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn3");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#socialIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn4");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#twitterIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+</script>
+
+<script src="js/raphael-min.js"></script>
+
+
+<script type="text/javascript">
+function showHide(shID) {
+	if (document.getElementById(shID)) {
+		if (document.getElementById(shID+'-show').style.display != 'none') {
+			document.getElementById(shID+'-show').style.display = 'none';
+			document.getElementById(shID).style.display = 'block';
+		}
+		else {
+			document.getElementById(shID+'-show').style.display = 'inline';
+			document.getElementById(shID).style.display = 'none';
+		}
+	}
+}
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+
+  </head>
+  <body>
+
+
+  <a id="home"></a>
+
+  <header class="nav-down">
+  	<div class="navWrapper">
+  	<div class="navbar1">
+      	<ul id="top-menu">
+    			<li class="active">
+      			<a href="#home">HOME</a>
+    			</li>
+    			<li>
+      			<a href="#about">ABOUT</a>
+    			</li>
+    			<li>
+      			<a href="#work">WORK</a>
+    			</li>
+    			<li>
+      			<a href="#contact">CONTACT</a>
+    			</li>
+  		</ul>
+  	</div>
+  	<div class="navbar2">
+  			<div class="accordionButton">MENU</div>
+  			<div class="accordionContent">
+  				<a href="#home">HOME</a><br>
+  				<div class="divLine"></div>
+  				<a href="#about">ABOUT</a><br>
+  				<div class="divLine"></div>
+  				<a href="#work">WORK</a><br>
+  				<div class="divLine"></div>
+  				<a href="#contact">CONTACT</a><br>
+  		</div>
+  	</div>
+    </div>
+  </header>
+
+  <div class="bannerBkg">
+  	<div class="bannerWrapper">
+      	<div id="tentaclesHeader2" class="fadeIn5">
+            <img src="images/drop.png" class="slideDown" alt="drop" style="margin-top:116px; margin-left:15px; position:absolute;"/>
+            <img src="images/drop.png" class="slideDown2" alt="drop" style="margin-top:246px; margin-left:165px; position:absolute;"/>
+            <img src="images/drop.png" class="slideDown3" alt="drop" style="margin-top:240px; margin-left:190px; position:absolute;"/>
+            <img src="images/drop.png" class="slideDown4" alt="drop" style="margin-top:256px; margin-left:440px; position:absolute;"/>
+            <img src="images/drop.png" class="slideDown5" alt="drop" style="margin-top:403px; margin-left:135px; position:absolute;"/>
+            </div>
+      	<div class="bannerText">easy<br>waves<br>
+      		<div class="bannerTextSmall">sometimes the best way to get where you're going is the simplest</div>
+  		</div>
+          <div id="bannerRight">
+          	<div id="demo" style="margin-top:3px; margin-left:3px;"></div>
+          </div>
+          <div class="space"></div>
+      </div>
+  </div>
+
+
+
+
+  <div class="tagline">
+  	<div class="taglineWrapper">
+      	Hello, my name is Mariela Velez. I <strong>design</strong>, I <strong>develop</strong>, I <strong>code</strong>, I'm a <strong>full stack web developer</strong>. Want to know where to find me? Check out some of the links below:
+      </div>
+  </div>
+
+  <div class="servicesWrapper">
+    <div class="servicesBox">
+    		<div class="servicesWebDesign">
+      		<div class="servicesCircle"><img src="images/github.png" alt="GitHub Logo" id="designIcon"/></div>
+          	<a href="https://github.com/marielavlz" class="servicesTitle">GitHub</a>
+          	<div class="servicesDivide1"></div>
+  			Explore my code. Feel free to comb through my repositories and check out what I can do.
+          	</div>
+  	</div>
+    <div class="servicesBox">
+    		<div class="servicesDevelopment">
+      		<div class="servicesCircle"><img src="images/linkedin.png" alt="LinkedIn Logo" id="developmentIcon"/></div>
+          	<a href="linkedin.com/in/mariela-velez-3b635013b/" class="servicesTitle">LinkedIn</a>
+          	<div class="servicesDivide2"></div>
+  			Let's connect! I'm always looking to expand my network and keep my professional history up to date.
+          </div>
+  	</div>
+    <div class="servicesBox">
+    		<div class="servicesNewsletter">
+      		<div class="servicesCircle"><img src="images/codepen.png" alt="CodePen Logo" id="newsletterIcon"/></div>
+          	<a href="https://codepen.io/marivlz/" class="servicesTitle">CodePen</a>
+          	<div class="servicesDivide3"></div>
+  			Not in use yet. Looking forward to future projects with CodePen.
+           </div>
+  	</div>
+  	<div class="servicesBoxLast">
+      	<div class="servicesSocial">
+      		<div class="servicesCircle"><img src="images/stackoverflow.png" alt="Social Media" id="socialIcon"/></div>
+          	<a href="https://stackoverflow.com/users/8075433/mariela-vlz?tab=profile" class="servicesTitle">Stack Overflow</a>
+          	<div class="servicesDivide4"></div>
+  			Great to engage with the development community and contribute.
+          </div>
+  	</div>
+  </div>
+
+  <div class="bigSpace"></div>
+
+
+
+
+  <a id="about"></a>
+
+  <div class="aboutPic">
+  	<div class="aboutOctopus"><img src="images/palm2.png" width="355" height="417" alt="octopus"/></div>
+    <div class="aboutText">
+      	<h1 style="color: #567a6e !important;">About Me</h1>
+      	Born in Mayaguez, Puerto Rico, I grew up in Aguadilla before I came to the mainland in 2008 where I attended high school and eventually college at the University of Texas at Austin. Although majoring in Microbiology and Infectious Disease, I took an MIS course which first exposed me to basic web development, IT, and business models. And from there, I played with the idea of pursuing a career in development and technology until one day I decided it was time to take the leap. I love the decision I made to pursue web development and take pride in my diverse cultural and educational background.
+      </div>
+      <div class="space"></div>
+  </div>
+
+  <div class="twitterBkg">
+  		<div class="twitterCircle"><img src="images/coqui.jpg" alt="Instagram" id="twitterIcon"/></div>
+  			<div class="taglineWrapper">
+  				<div class="instagram">
+  				</div>
+      		</div>
+  </div>
+
+  <a id="work"></a>
+
+  <div class="workGroup1">
+
+  <a class='inline' href="#inline_content1">
+  	<div class="yellowBox">
+      	<img src="images/tengwar.svg" alt="Tengwar" class="grow"/><br>
+          LOTR TRIVIA GAME<br>
+          <div class="boxesInfo" style="color:#343d3a">Front-End / Interactive</div>
+  	</div>
+  </a>
+
+  <a class='inline' href="#inline_content2">
+  	<div class="ltGreenBox">
+      	<img src="images/fitnessk.png" alt="Fitness KAMB" class="grow"/><br>
+          FITNESS KAMB<br>
+          <div class="boxesInfo" style="color:#343d3a;"> Full Stack / Development / UI Design</div>
+  	</div>
+  </a>
+
+  <a class='inline' href="#inline_content3">
+  	<div class="ltOrangeBox">
+      	<img src="images/crystal.png" alt="Crystal Collector" class="grow"/><br>
+          CRYSTAL COLLECTOR<br>
+          <div class="boxesInfo" style="color:#343d3a"> Full Stack / Responsive Development</div>
+  	</div>
+  </a>
+
+  <a class='inline' href="#inline_content4">
+  	<div class="dkOrangeBox">
+      	<img src="images/friends.png" alt="Friend Finder" class="grow"/><br>
+          FRIEND FINDER<br>
+          <div class="boxesInfo" style="color:#343d3a;"> Full Stack / Responsive Development</div>
+  	</div>
+  </a>
+
+  <a class='inline' href="#inline_content5">
+  	<div class="ltOrangeBox">
+      	<img src="images/burger.png" alt="Eat-da-Burger" class="grow"/><br>
+          EAT-DA-BURGER<br>
+          <div class="boxesInfo" style="color:#343d3a"> Full Stack / Responsive Development / MySQL </div>
+  	</div>
+  </a>
+
+  <a class='inline' href="#inline_content6">
+  	<div class="dkGreenBox">
+      	<img src="images/b.png" alt="Bamazon" class="grow"/><br>
+          BAMAZON<br>
+          <div class="boxesInfo" style="color:#343d3a;"> Back End / Development</div>
+  	</div>
+  </a>
+
+  <a class='inline' href="#inline_content7">
+  	<div class="yellowBox">
+      	<img src="images/gif.png" alt="GIFTASTIC" class="grow"/><br>
+          GIFTASTIC<br>
+          <div class="boxesInfo" style="color:#343d3a"> Front End / Development</div>
+  	</div>
+  </a>
+
+  <a class='inline' href="#inline_content8">
+  	<div class="ltGreenBox">
+      	<img src="images/scheduler.png" alt="King's Cross Scheduler" class="grow"/><br>
+          KING'S CROSS TRAIN SCHEDULE<br>
+          <div class="boxesInfo" style="color:#343d3a;"> Front End / Responsive Development</div>
+  	</div>
+  </a>
+
+  </div>
+
+  <div class="workGroup2">
+
+  <a href="https://marielavlz.github.io/TriviaGame/" target="_blank">
+    <div class="yellowBox">
+      	<img src="images/tengwar.svg" alt="Tengwar" class="grow"/><br>
+          LOTR TRIVIA GAME<br>
+          <div class="boxesInfo" style="color:#343d3a">Front-End / Interactive</div>
+  	</div>
+  </a>
+
+  <a href="https://marielavlz.github.io/FitnessKAMB/" target="_blank">
+    <div class="ltGreenBox">
+      	<img src="images/fitnessk.png" alt="Fitness KAMB" class="grow"/><br>
+          FITNESS KAMB<br>
+          <div class="boxesInfo" style="color:#343d3a;"> Full Stack / Development / UI Design</div>
+  	</div>
+  </a>
+
+  <a href="https://marielavlz.github.io/week-4-game/" target="_blank">
+    <div class="ltOrangeBox">
+      	<img src="images/crystal.png" alt="Crystal Collector" class="grow"/><br>
+          CRYSTAL COLLECTOR<br>
+          <div class="boxesInfo" style="color:#343d3a"> Full Stack / Responsive Development</div>
+  	</div>
+  </a>
+
+  <a href="https://guarded-waters-14795.herokuapp.com/" target="_blank">
+    <div class="dkOrangeBox">
+      	<img src="images/friends.png" alt="Friend Finder" class="grow"/><br>
+          FRIEND FINDER<br>
+          <div class="boxesInfo" style="color:#343d3a;"> Full Stack / Responsive Development</div>
+  	</div>
+  </a>
+
+  <a href="https://secure-waters-92206.herokuapp.com/index" target="_blank">
+    <div class="ltOrangeBox">
+      	<img src="images/burger.png" alt="Eat-da-Burger" class="grow"/><br>
+          EAT-DA-BURGER<br>
+          <div class="boxesInfo" style="color:#343d3a"> Full Stack / Responsive Development / MySQL </div>
+  	</div>
+  </a>
+
+  <a href="https://github.com/marielavlz/bamazon" target="_blank">
+    <div class="dkGreenBox">
+      	<img src="images/b.png" alt="Bamazon" class="grow"/><br>
+          BAMAZON<br>
+          <div class="boxesInfo" style="color:#343d3a;"> Back End / Development</div>
+  	</div>
+  </a>
+
+  </div>
+
+  <div class="space"></div>
+
+  <a id="store"></a>
+
+<div class="storeBkg">
+</div>
+
+
+  <a id="contact"></a>
+
+  <div class="contactBkg">
+  	<div class="contactWrapper">
+      	<h2>contact me</h2>
+          I am currently searching for a position as a Front-End or Full Stack Developer, or a Business Analyst developer. Let me know if you wish to discuss my qualifications further:<br><br>
+
+          <div class="submitBtnBkg">
+  		<a href="mailto:mari.vlz13@gmail.com"><div class="submitBtnNew">SEND AN EMAIL</div></a>
+  		</div>
+
+      </div>
+  </div>
+
+
+  <div style='display:none'>
+  	<div id='inline_content1' style='padding:20px; background:#fff;'>
+      	<div class="popUpLeft">
+      		<img src="images/lotr.png" alt="" />
+      	</div>
+      	<div class="popUpRight">
+      		<div class="popUpTitle">Lord of the Rings Trivia</div>
+              <div class="popUpService">Front End</div>
+              <div class="popUpService">Development</div>
+              The one trivia game to rule them all. Test out your knowledge of Lord of the Rings and related Tolkien works with this ultimate quiz! Created with JQuery, JavaScript, Bootsrap.
+  			<br><br>
+      		<a href="https://marielavlz.github.io/TriviaGame/" target="_blank"><div class="popUpBtn">LAUNCH APP</div></a>
+      	</div>
+          <div class="space"></div>
+  	</div>
+  </div>
+
+  <div style='display:none'>
+  	<div id='inline_content2' style='padding:20px; background:#fff;'>
+      	<div class="popUpLeft">
+      		<img src="images/fitnesskamb.png" alt="" />
+      	</div>
+      	<div class="popUpRight">
+      		<div class="popUpTitle">Fitness KAMB</div>
+              <div class="popUpService">UI Design</div>
+              <div class="popUpService">Full Stack</div>
+              <div class="popUpService">Development</div>
+              A digital health and fitness resource created to allow users to set personal goals and find fitness centres and health conscious restaurants near them. Designed and wrote the homepage, fitness page, and events page UI in a team of four.
+  			<br><br>
+      		<a href="https://marielavlz.github.io/FitnessKAMB/" target="_blank"><div class="popUpBtn">LAUNCH WEBSITE</div></a>
+      	</div>
+          <div class="space"></div>
+  	</div>
+  </div>
+
+  <div style='display:none'>
+  	<div id='inline_content3' style='padding:20px; background:#fff;'>
+      	<div class="popUpLeft">
+      		<img src="images/crystalcollector.png" alt="" />
+      	</div>
+      	<div class="popUpRight">
+      		<div class="popUpTitle">Crystal Collector</div>
+              <div class="popUpService">Full Stack</div>
+              <div class="popUpService">Responsive Development</div>
+              A fun, interactive single page app that allows the user to select crystals with randomized values to reach a target goal.
+  			<br><br>
+      		<a href="https://marielavlz.github.io/week-4-game/" target="_blank"><div class="popUpBtn">LAUNCH APP</div></a>
+      	</div>
+          <div class="space"></div>
+  	</div>
+  </div>
+
+  <div style='display:none'>
+  	<div id='inline_content4' style='padding:20px; background:#fff;'>
+      	<div class="popUpLeft">
+      		<img src="images/finder.png" alt="" />
+      	</div>
+      	<div class="popUpRight">
+      		<div class="popUpTitle">Friend Finder</div>
+              <div class="popUpService">Full Stack</div>
+              <div class="popUpService">Development</div>
+              A full stack application using Node.js that compares a user’s inputs with an array of characters and matches user and character based on response. Created with Node.js, Express, JSON, REST, and HTML.
+  			<br><br>
+      		<a href="https://guarded-waters-14795.herokuapp.com/" target="_blank"><div class="popUpBtn">LAUNCH WEBSITE</div></a>
+      	</div>
+          <div class="space"></div>
+  	</div>
+  </div>
+
+  <div style='display:none'>
+  	<div id='inline_content5' style='padding:20px; background:#fff;'>
+      	<div class="popUpLeft">
+      		<img src="images/eatburger.png" alt="" />
+      	</div>
+      	<div class="popUpRight">
+      		<div class="popUpTitle">Eat-Da-Burger</div>
+              <div class="popUpService">Full Stack</div>
+              <div class="popUpService">Responsive Development</div>
+              A full stack application that uses an ORM to connect a SQL database to a UI. The UI still needs to be polished as it's not my best work. A sequelize version is coming soon!
+  			<br><br>
+      		<a href="https://secure-waters-92206.herokuapp.com/index" target="_blank"><div class="popUpBtn">LAUNCH WEBSITE</div></a>
+      	</div>
+          <div class="space"></div>
+  	</div>
+  </div>
+
+  <div style='display:none'>
+  	<div id='inline_content6' style='padding:20px; background:#fff;'>
+      	<div class="popUpLeft">
+      		<img src="images/customer_one.png" alt="" />
+      	</div>
+      	<div class="popUpRight">
+      		<div class="popUpTitle">Bamazon</div>
+              <div class="popUpService">Back End</div>
+              <div class="popUpService">Development</div>
+              A back end project that uses Node.js to allow a user to request an 'order' from a database which is then updated in MySQL.
+  			<br><br>
+      		<a href="https://github.com/marielavlz/bamazon" target="_blank"><div class="popUpBtn">LAUNCH WEBSITE</div></a>
+      	</div>
+          <div class="space"></div>
+  	</div>
+  </div>
+
+  <div style='display:none'>
+  	<div id='inline_content7' style='padding:20px; background:#fff;'>
+      	<div class="popUpLeft">
+      		<img src="images/giftastic.png" alt="" />
+      	</div>
+      	<div class="popUpRight">
+      		<div class="popUpTitle">Giftastic</div>
+              <div class="popUpService">Front End</div>
+              <div class="popUpService">Responsive Development</div>
+              A Lord of the Rings themed page that fills with your responsive and funny gifs of your favourite characters. Created with a Giphy API.
+  			<br><br>
+      		<a href="https://marielavlz.github.io/giftastic/" target="_blank"><div class="popUpBtn">LAUNCH WEBSITE</div></a>
+      	</div>
+          <div class="space"></div>
+  	</div>
+  </div>
+
+  <div style='display:none'>
+  	<div id='inline_content8' style='padding:20px; background:#fff;'>
+      	<div class="popUpLeft">
+      		<img src="images/hogwarts.png" alt="" />
+      	</div>
+      	<div class="popUpRight">
+      		<div class="popUpTitle">King's Cross Train Station</div>
+              <div class="popUpService">Front End</div>
+              <div class="popUpService">Responsive Development</div>
+              All aboard the Hogwarts Express! Don't be late for your first potions lessons! This single page app uses Moment JS to create a responsive and up-to-date train schedule.
+  			<br><br>
+      		<a href="https://marielavlz.github.io/trainscheduler/" target="_blank"><div class="popUpBtn">LAUNCH APP</div></a>
+      	</div>
+          <div class="space"></div>
+  	</div>
+  </div>
+
+
+
+  <script>
+  // Cache selectors
+  var lastId,
+      topMenu = $("#top-menu"),
+      topMenuHeight = topMenu.outerHeight()+15,
+      // All list items
+      menuItems = topMenu.find("a"),
+      // Anchors corresponding to menu items
+      scrollItems = menuItems.map(function(){
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+      });
+
+  // Bind click handler to menu items
+  // so we can get a fancy scroll animation
+  menuItems.click(function(e){
+    var href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+    $('html, body').stop().animate({
+        scrollTop: offsetTop
+    }, 900);
+    e.preventDefault();
+  });
+
+  // Bind to scroll
+  $(window).scroll(function(){
+     // Get container scroll position
+     var fromTop = $(this).scrollTop()+topMenuHeight;
+
+     // Get id of current scroll item
+     var cur = scrollItems.map(function(){
+       if ($(this).offset().top < fromTop)
+         return this;
+     });
+     // Get the id of the current element
+     cur = cur[cur.length-1];
+     var id = cur && cur.length ? cur[0].id : "";
+
+     if (lastId !== id) {
+         lastId = id;
+         // Set/remove active class
+         menuItems
+           .parent().removeClass("active")
+           .end().filter("[href=#"+id+"]").parent().addClass("active");
+     }
+  });
+  </script>
+
+</body>
+</html>
