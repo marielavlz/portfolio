@@ -1,0 +1,1134 @@
+/*scroll effect*/
+
+nav{
+	font-family: "Raleway", sans-serif;;
+}
+.navbar-trans {
+  background-color: transparent !important;
+  border: none;
+  transition: top 1s ease;
+}
+
+.navbar-brand{
+	position: relative;
+	left: -86%;
+}
+
+.logo-coffee{
+	width: 40px;
+	float: left;
+	position: relative;
+	top: -21.5px;
+	left: -10px;
+}
+
+/*double row*/
+.navbar-doublerow > .navbar{
+	display: block;
+	padding: 0px auto;
+	margin: 0px auto;
+	min-height: 25px;
+}
+.navbar-doublerow .nav{
+	padding: 0px auto;
+}
+.navbar-doublerow .dividline{
+  margin: 5px 100px;
+  padding-top: 1px;
+  background-color: inherit;
+}
+/*top nav*/
+.navbar-doublerow .navbar-top ul>li>a {
+	padding: 10px auto;
+	font-size: 12px;
+}
+/*down nav*/
+.navbar-doublerow .navbar-down .navbar-brand {
+	padding: 0px auto;
+	float: left;
+	color: #fff;
+	font-size: 36.2px;
+}
+.navbar-doublerow .navbar-down ul>li>a{
+	font-size: 16px;
+	color: #fff;
+	-webkit-transition: all 0.2s ease-in;
+}
+.navbar-doublerow .navbar-down ul>li>a:hover{
+	/*border-bottom: 1px solid #fff;*/
+	color: #74773d;
+}
+.navbar-doublerow .navbar-down .dropdown{
+    padding: 5px;
+    color: #000;
+}
+.navbar-doublerow .navbar-down .dropdown ul>li>a,
+.navbar-doublerow .navbar-down .dropdown ul>li>a:hover{
+  color: #000;
+  border-bottom: none;
+}
+.navbar-doublerow.navbar-trans.afterscroll {
+}
+.navbar-doublerow.navbar-trans.afterscroll {
+   top:-50px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav{
+	position: relative;
+	left: 24%;
+	top: 3.2px;
+}
+/*text*/
+.text-white,.text-white-hover:hover{color:#fff!important}
+/*fontcolor*/
+.light-grey {color:#000!important;background-color:#E6E9ED!important}
+
+.header-links{
+	position: relative;
+	left: 24%;
+}
+
+/*Jumbotron*/
+
+body{
+  overflow-x: hidden;
+  margin: 0px 0px 100px; /* bottom = footer height */
+	font-family: "Quicksand",sans-serif;
+}
+
+.header-container{
+  width: 100%;
+  height: 695px;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  padding: 20px;
+}
+
+.video-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+video{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+/*About Me Section*/
+.portrait{
+	height: 41%;
+	width: 41%;
+	position:relative;
+	left: 28.3%;
+	top: 90px;
+	border: 3.5px solid #f1efe9;
+}
+
+.about-cont{
+	width: 62%;
+}
+
+.about-me{
+	height: 0px;
+}
+
+.about-jumb{
+	z-index: 1;
+	position: relative;
+	top: -320px;
+	background-color: transparent !important;
+	padding: 0 0 0 0 !important;
+}
+
+.info-me{
+	color: #000;
+	position: relative;
+	top: 27px;
+}
+
+.full-name{
+	font-size: 68px;
+	font-family: 'Satisfy',cursive;
+	text-align: center;
+}
+
+.full-title, .slogan{
+	position: relative;
+	top: -5px;
+	text-align: center;
+	color: #9b7125;
+}
+
+/*.phone, .email{
+	font-size: 17px !important;
+	font-weight: 0 !important;
+	position: relative;
+	top: 6px;
+	left: 9%;
+}*/
+
+.icons{
+	text-align: center;
+}
+
+.icon{
+	font-size: 8.5rem;
+	color: #a8b775 !important;
+}
+
+.git-icon{
+	position: relative;
+	left: -136%;
+	top: 340px;
+}
+
+.linkedin-icon{
+	position: relative;
+	left: 133%;
+	top: 340px;
+}
+
+.icon:hover{
+	color: #8f9b65 !important;
+}
+
+.buttons-info{
+	text-align: center;
+}
+
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  margin: 20px 20px 20px 20px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Seventh Button */
+
+.dl-btn {
+  color: #6b7248;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.download-btn{
+	border-color: #6b7248 !important;
+	color: #6b7248 !important;
+	padding: 22px;
+}
+
+.download-btn:hover{
+	background: #abb287 !important;
+}
+
+
+#button-7 {
+  position: relative;
+	top: 116px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-7 a {
+  position: relative;
+  left: 0;
+	top: -6px;
+  transition: all .35s ease-Out;
+}
+
+#dub-arrow {
+  width: 100%;
+  height: 100%;
+  background: #abb287;
+  left: -200px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+.dl-icon {
+	font-size: 18px !important;
+}
+
+#button-7:hover #dub-arrow {
+  left: 0;
+}
+
+#button-7:hover a {
+  left: 150px;
+}
+
+/*About Me Text*/
+.about-txt-cont{
+	height: 520px;
+	background-color: #f1efe9;
+	background-image: url(../images/lightwood2.jpg);
+}
+.about-txt{
+	position: relative;
+	top: 23%;
+	font-size: 18px;
+	width: 79%;
+	color: #664811;
+}
+
+/*Timeline*/
+
+.edu-title{
+	text-align: center;
+	font-family: 'Raleway',sans-serif;
+	color: #666823;
+	text-shadow: 1px 1px 0 #f8f9ed;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.experience{
+	height: 720px;
+	color: #a37520;
+	background-color: #f9f7f2;
+	background-image: url(../images/whitewood2.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+	padding-top: 12px;
+	position: relative;
+	top: -30px;
+}
+/* --------------------------------
+
+Main Components
+
+-------------------------------- */
+.cd-horizontal-timeline {
+  opacity: 0;
+  margin: 2em auto;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.cd-horizontal-timeline::before {
+  /* never visible - this is used in jQuery to check the current MQ */
+  content: 'mobile';
+  display: none;
+}
+.cd-horizontal-timeline.loaded {
+  /* show the timeline after events position has been set (using JavaScript) */
+  opacity: 1;
+}
+.cd-horizontal-timeline .timeline {
+  position: relative;
+  height: 100px;
+  width: 90%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.cd-horizontal-timeline .events-wrapper {
+  position: relative;
+  height: 100%;
+  margin: 0 40px;
+  overflow: hidden;
+}
+.cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
+  /* these are used to create a shadow effect at the sides of the timeline */
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  width: 20px;
+}
+.cd-horizontal-timeline .events-wrapper::before {
+  left: 0;
+  background-image: -webkit-linear-gradient( left , #f8f8f8, rgba(248, 248, 248, 0));
+  background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
+}
+.cd-horizontal-timeline .events-wrapper::after {
+  right: 0;
+  background-image: -webkit-linear-gradient( right , #f8f8f8, rgba(248, 248, 248, 0));
+  background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
+}
+.cd-horizontal-timeline .events {
+  /* this is the grey line/timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 49px;
+  height: 2px;
+  /* width will be set using JavaScript */
+  background: #b7b7b7;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+.cd-horizontal-timeline .filling-line {
+  /* this is used to create the green line filling the timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #7b9d6f;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.cd-horizontal-timeline .events a {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 15px;
+  color: #383838;
+  /* fix bug on Safari - text flickering while timeline translates */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.cd-horizontal-timeline .events a::after {
+  /* this is used to create the event spot */
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -5px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 2px solid #b7b7b7;
+  background-color: #f8f8f8;
+  -webkit-transition: background-color 0.3s, border-color 0.3s;
+  -moz-transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.no-touch .cd-horizontal-timeline .events a:hover::after {
+  background-color: #7b9d6f;
+  border-color: #7b9d6f;
+}
+.cd-horizontal-timeline .events a.selected {
+  pointer-events: none;
+}
+.cd-horizontal-timeline .events a.selected::after {
+  background-color: #7b9d6f;
+  border-color: #7b9d6f;
+}
+.cd-horizontal-timeline .events a.older-event::after {
+  border-color: #7b9d6f;
+}
+@media only screen and (min-width: 1100px) {
+  .cd-horizontal-timeline {
+    margin: 6em auto;
+  }
+  .cd-horizontal-timeline::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop';
+  }
+}
+
+.cd-timeline-navigation a {
+  /* these are the left/right arrows to navigate the timeline */
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  border: 2px solid #b7b7b7;
+  /* replace text with an icon */
+  overflow: hidden;
+  color: transparent;
+  text-indent: 100%;
+  white-space: nowrap;
+  -webkit-transition: border-color 0.3s;
+  -moz-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+.cd-timeline-navigation a::after {
+  /* arrow icon */
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../images/cd-arrow.svg) no-repeat 0 0;
+}
+.cd-timeline-navigation a.prev {
+  left: 0;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -moz-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  -o-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.cd-timeline-navigation a.next {
+  right: 0;
+}
+.no-touch .cd-timeline-navigation a:hover {
+  border-color: #7b9d6f;
+}
+.cd-timeline-navigation a.inactive {
+  cursor: not-allowed;
+}
+.cd-timeline-navigation a.inactive::after {
+  background-position: 0 -16px;
+}
+.no-touch .cd-timeline-navigation a.inactive:hover {
+  border-color: #b7b7b7;
+}
+
+.cd-horizontal-timeline .events-content {
+  position: relative;
+  width: 100%;
+  margin: 2em 0;
+  overflow: hidden;
+  -webkit-transition: height 0.4s;
+  -moz-transition: height 0.4s;
+  transition: height 0.4s;
+}
+.cd-horizontal-timeline .events-content li {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  padding: 0 5%;
+  opacity: 0;
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+.cd-horizontal-timeline .events-content li.selected {
+  /* visible event content */
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.cd-horizontal-timeline .events-content li.enter-right, .cd-horizontal-timeline .events-content li.leave-right {
+  -webkit-animation-name: cd-enter-right;
+  -moz-animation-name: cd-enter-right;
+  animation-name: cd-enter-right;
+}
+.cd-horizontal-timeline .events-content li.enter-left, .cd-horizontal-timeline .events-content li.leave-left {
+  -webkit-animation-name: cd-enter-left;
+  -moz-animation-name: cd-enter-left;
+  animation-name: cd-enter-left;
+}
+.cd-horizontal-timeline .events-content li.leave-right, .cd-horizontal-timeline .events-content li.leave-left {
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.cd-horizontal-timeline .events-content li > * {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.cd-horizontal-timeline .events-content h2 {
+  font-weight: bold;
+  font-size: 34px !important;
+  line-height: 1.2;
+}
+.cd-horizontal-timeline .events-content em {
+  display: block;
+  font-style: italic;
+  margin: 10px auto;
+}
+.cd-horizontal-timeline .events-content em::before {
+  content: '- ';
+}
+.cd-horizontal-timeline .events-content p {
+  font-size: 1.4rem;
+  color: #636262;
+}
+.cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
+  line-height: 1.6;
+}
+@media only screen and (min-width: 768px) {
+  .cd-horizontal-timeline .events-content h2 {
+    font-size: 7rem;
+  }
+  .cd-horizontal-timeline .events-content em {
+    font-size: 2rem;
+  }
+  .cd-horizontal-timeline .events-content p {
+    font-size: 1.8rem;
+  }
+}
+
+@-webkit-keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+@-moz-keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0%);
+  }
+}
+@keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+@-moz-keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0%);
+  }
+}
+@keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+/*Freelance Work*/
+.work-title{
+	text-align: center;
+	font-size: 4rem !important;
+	color: #454f16 !important;
+	text-shadow: 1px 1px 0 #f8f9ed;
+	padding-bottom: 10px;
+	position: relative;
+	top: -15px;
+	font-family: 'Raleway',sans-serif;
+}
+
+.proj-jumb{
+	height: 65%;
+	position: relative;
+	top: -60px;
+	padding-bottom: 70px;
+	background-image: url(../images/coffeelaptop.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.coffee-cup{
+	width: 18%;
+	z-index: 300;
+	position: relative;
+	top: -42px;
+	left: 39%;
+	padding: 0 0 0 0 !important;
+}
+
+.card-body{
+	background-color: #b58241;
+	background-image: url(../images/lightwood.png);
+}
+
+.card-content{
+	position: relative;
+	top: -32px;
+}
+
+.list-group-item{
+	background-color: transparent !important;
+	border-top: 1px solid #664811 !important;
+	border-bottom: 1px solid #664811 !important;
+}
+
+.card-deck{
+	margin-top: 30px;
+}
+.card-title{
+	text-align: center;
+	font-size: 2.2rem !important;
+}
+.card-sub{
+	font-style: italic;
+	text-align: center;
+}
+.card-text{
+	font-size: 15px !important;
+}
+
+.live-btns{
+	text-align: center;
+}
+
+.live-btn{
+	border-color: #664811 !important;
+	color: #664811 !important;
+}
+
+.hover{
+  background-color: #e8e8e8;
+	color: #664811;
+}
+.hover:hover{
+ box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+ padding: 3px;
+ margin-top: -15px;
+}
+
+/*Skills Section*/
+.skills-jumb{
+	background-color: #f1efe9;
+	background-image: url(../images/lightwood2.jpg);
+	/*background-size: 100%;*/
+	/*background-repeat: no-repeat;*/
+	/*background-position: 0;*/
+	position: relative;
+	top: -30px;
+	height: 750px;
+}
+
+.skills-title{
+	text-align: center;
+	font-size: 4rem !important;
+	color: #686b3e !important;
+	text-shadow: 1px 1px 0 #f8f9ed;
+	padding-bottom: 10px;
+	position: relative;
+	top: -15px;
+	font-family: 'Raleway',sans-serif;
+	z-index: 100;
+}
+
+.skill-cont{
+	/*background-color: rgba(249, 255, 250, 0);*/
+	padding: 56px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: inherit;
+	width: inherit;
+	position: relative;
+	top: -163px;
+	left: 0px !important;
+}
+.skills-container{
+	font-size: 2.5rem;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+.skillset {
+	margin-top: 68px;
+}
+
+.skill-lockup {
+	max-width: 450px;
+	width: 100%;
+	float: left;
+	margin-right: 40px;
+	position: relative;
+	top: 92px;
+	left: 13%;
+}
+
+.mr {
+	margin-right: 0;
+	/*margin-left: 17%;*/
+}
+
+.mb {
+	margin-bottom: 5px;
+}
+
+.skill-info {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.skill-name {
+	float: left;
+	color: #686b3e;
+	font-weight: 550;
+}
+
+.skill-status {
+	float: right;
+	color: #595e42;
+	font-size: .8em;
+}
+.skill-bar {
+	display: block;
+	max-width: 450px;
+	width: 100%;
+	height: 5px;
+	background: #fff;
+	clear: both;
+	margin: 20px 0;
+}
+
+.skill-level {
+	display: table;
+	height: 5px;
+}
+.html-5, .css-3,
+.j-query, .java-script,
+.my-sql, .mongo-db, .express, .react-js,
+.node, .ajax, .r, .ux-design{
+	background: #bfa133;
+}
+
+.html-5 {
+	width: 95%;
+	-webkit-animation: html-5 10s linear;
+	animation: html-5 10s linear;
+}
+
+.css-3 {
+	width: 90%;
+	-webkit-animation: css-3 10s linear;
+	animation: css-3 10s linear;
+}
+
+.j-query {
+	width: 82%;
+	-webkit-animation: j-query 10s linear;
+	animation: j-query 10s linear;
+}
+
+.java-script {
+	width: 78%;
+	-webkit-animation: java-script 10s linear;
+	animation: java-script 10s linear;
+}
+
+.my-sql {
+	width: 70%;
+	-webkit-animation: my-sql 10s linear;
+	animation: my-sql 10s linear;
+}
+
+.mongo-db {
+	width: 70%;
+	-webkit-animation: mongo-db 10s linear;
+	animation: mongo-db 10s linear;
+}
+
+.express{
+	width: 65%;
+	-webkit-animation: express 10s linear;
+	animation: express 10s linear;
+}
+
+.react-js{
+	width: 40%;
+	-webkit-animation: react-js 10s linear;
+	animation: react-js 10s linear;
+}
+
+.node{
+	width: 85%;
+	-webkit-animation: node 10s linear;
+	animation: node 10s linear;
+}
+
+.ajax{
+	width: 68%;
+	-webkit-animation: ajax 10s linear;
+	animation: ajax 10s linear;
+}
+
+.r{
+	width: 75%;
+	-webkit-animation: r 10s linear;
+	animation: r 10s linear;
+}
+
+.ux-design{
+	width: 90%;
+	-webkit-animation: ux-design 10s linear;
+	animation: ux-design 10s linear;
+}
+
+
+/*-----------------------
+	  	Animations
+-------------------------*/
+@-webkit-keyframes html-5 {
+	from { width: 0%; }
+	to { width: 95%; }
+}
+
+@keyframes html-5 {
+	from { width: 0%; }
+	to { width: 95%; }
+}
+
+/*-----------------------
+	css-3 Animation
+-------------------------*/
+@-webkit-keyframes css-3 {
+	from { width: 0%; }
+	to { width: 90%; }
+}
+
+@keyframes css-3 {
+	from { width: 0%; }
+	to { width: 90%; }
+}
+
+/*-----------------------
+	j-query Animation
+-------------------------*/
+@-webkit-keyframes j-query {
+	from { width: 0%; }
+	to { width: 82%; }
+}
+
+@keyframes j-query {
+	from { width: 0%; }
+	to { width: 82%; }
+}
+
+/*-----------------------
+  java-script Animation
+-------------------------*/
+@-webkit-keyframes java-script {
+	from { width: 0%; }
+	to { width: 78%; }
+}
+
+@keyframes java-script {
+	from { width: 0%; }
+	to { width: 78%; }
+}
+
+/*-----------------------
+my-sql Animation
+-------------------------*/
+@-webkit-keyframes my-sql {
+	from { width: 0%; }
+	to { width: 70%; }
+}
+
+@keyframes my-sql {
+	from { width: 0%; }
+	to { width: 70%; }
+}
+
+/*-----------------------
+   mongo-db Animation
+-------------------------*/
+@-webkit-keyframes mongo-db {
+	from { width: 0%; }
+	to { width: 70%; }
+}
+
+@keyframes mongo-db {
+	from { width: 0%; }
+	to { width: 70%; }
+}
+
+/*-----------------------
+   express Animation
+-------------------------*/
+@-webkit-keyframes express {
+	from { width: 0%; }
+	to { width: 65%; }
+}
+
+@keyframes express {
+	from { width: 0%; }
+	to { width: 65%; }
+}
+
+/*-----------------------
+   react-js Animation
+-------------------------*/
+@-webkit-keyframes react-js {
+	from { width: 0%; }
+	to { width: 40%; }
+}
+
+@keyframes react-js {
+	from { width: 0%; }
+	to { width: 40%; }
+}
+
+/*-----------------------
+   node Animation
+-------------------------*/
+@-webkit-keyframes node {
+	from { width: 0%; }
+	to { width: 85%; }
+}
+
+@keyframes node {
+	from { width: 0%; }
+	to { width: 85%; }
+}
+
+/*-----------------------
+   ajax Animation
+-------------------------*/
+@-webkit-keyframes ajax {
+	from { width: 0%; }
+	to { width: 68%; }
+}
+
+@keyframes ajax {
+	from { width: 0%; }
+	to { width: 68%; }
+}
+
+/*-----------------------
+   r Animation
+-------------------------*/
+@-webkit-keyframes r {
+	from { width: 0%; }
+	to { width: 75%; }
+}
+
+@keyframes r {
+	from { width: 0%; }
+	to { width: 75%; }
+}
+
+/*-----------------------
+   ux-design Animation
+-------------------------*/
+@-webkit-keyframes ux-design {
+	from { width: 0%; }
+	to { width: 90%; }
+}
+
+@keyframes ux-design {
+	from { width: 0%; }
+	to { width: 90%; }
+}
+/*-----------------------
+	  Media queries
+-------------------------*/
+
+
+@media screen and (max-width: 955px) {
+	.skillset {
+		padding: 20px;
+	}
+	.skill-lockup {
+		max-width: 700px;
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.skill-bar {
+		max-width: 700px;
+		width: 100%;
+	}
+}
