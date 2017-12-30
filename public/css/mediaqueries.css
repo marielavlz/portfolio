@@ -1,0 +1,106 @@
+@media screen and (max-width: 640px) {
+  body{
+    background-image: url(../images/lightwood2.jpg);
+    /*background-size: 100%;*/
+    /*background-attachment: fixed;*/
+  }
+  .navbar-brand{
+    position: relative;
+    left: -35%;
+  }
+  #dropdownmenu{
+    position: relative;
+    left: 70px;
+  }
+  .header-container{
+    height: 360px;
+  }
+  .aboutme{
+    position: relative;
+    bottom: 90px;
+  }
+  .buttons-info{
+    position: relative;
+    bottom: 63px;
+  }
+  .portrait{
+    position: relative;
+    top: 228px;
+  }
+  .about-txt{
+    position: relative;
+    top: 11%;
+    font-size: 16px;
+  }
+  .experience{
+    height: 600px;
+    background-image: none;
+    background-color: transparent;
+  }
+  .skills-jumb{
+    height: 810px;
+  }
+  .skill-cont{
+    position: relative;
+    top: -145px;
+  }
+  .skillset{
+    margin-top: 12px;
+    position: relative;
+    right: 14px;
+  }
+  .skills-container{
+    font-size: 1.6rem;
+  }
+  .proj-jumb{
+    background-image: none;
+    background-color: transparent;
+  }
+  .whole-site{
+    height: 4385px;
+  }
+  .footer{
+    height: 28%;
+  }
+  .footer-content{
+    position: relative;
+    top: 3px;
+  }
+  .foot-text{
+    position: absolute;
+    left: 30%;
+  }
+  .contact-me{
+    height: 426px;
+  }
+  .back, .front{
+    width: 580px;
+    height: 288px;
+    position: absolute;
+    bottom: 77px;
+    left: 18%;
+  }
+  .top{
+    width: 594px;
+    height: 150px;
+    position: absolute;
+    left: 104px;
+  }
+  .top-center{
+    width: 277px;
+    height: 190px;
+    position: absolute;
+    left: 263px;
+  }
+  .letter-wrap{
+    position: absolute;
+    left: 107px;
+  }
+  .envelope{
+    bottom: 57px;
+  }
+  .notif{
+    left: 75%;
+    top: 30%;
+  }
+}

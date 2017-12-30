@@ -15,7 +15,7 @@ nav{
 
 .navbar-brand{
 	position: relative;
-	left: -86%;
+	right: 79%;
 }
 
 .logo-coffee{
@@ -83,7 +83,7 @@ nav{
 }
 .navbar-nav{
 	position: relative;
-	left: 24%;
+	/*left: 24%;*/
 	top: 3.2px;
 }
 /*text*/
@@ -93,7 +93,7 @@ nav{
 
 .header-links{
 	position: relative;
-	left: 24%;
+	left: 33.5%;
 }
 
 /*Jumbotron*/
@@ -835,6 +835,8 @@ body {
 
 .skillset {
 	margin-top: 68px;
+	position: relative;
+	right: 24px;
 }
 
 .skill-lockup {
@@ -1125,7 +1127,7 @@ my-sql Animation
 	  Media queries
 -------------------------*/
 
-
+/*
 @media screen and (max-width: 955px) {
 	.skillset {
 		padding: 20px;
@@ -1141,7 +1143,7 @@ my-sql Animation
 		max-width: 700px;
 		width: 100%;
 	}
-}
+}*/
 
 /*Contact Section*/
 
