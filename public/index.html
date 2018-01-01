@@ -36,7 +36,7 @@
       <div class="flex-container">
         <div class="navbar-header flex-item">
           <a class="navbar-brand" href="#top">
-            <img class="logo-coffee" src="/images/cupicon.png" alt="icon of a coffee cup"/>
+            <img class="logo-coffee" src="/images/codecoffee.png" alt="icon of a coffee cup"/>
             Mariela Velez</a>
         </div>
         <div class="header-links">
@@ -107,21 +107,36 @@
   </section>
   <section class="about-text" id="abtxt">
     <div class="jumbotron jumbotron-fluid about-txt-cont">
-      <div class="container about-txt">
-        <h2>Hello! I'm Mariela Velez!</h2>
-        But call me Mari. I was born in Mayaguez, Puerto Rico where I lived until 2008 when I moved to the mainland USA at 13 years old. In the mainland, I attended Tomball High School and recently graduated from The University of Texas at Austin with a Bachelor of Science in Microbiology and Infectious Diseases.
-        <br />
-        <br />
-        Afterwards, I chose to acquire a certification in full stack web development from UT Austin, having gathered interest in web development throughout my years as an undergrad. I am now proud to say that I have always pursued all of my passions and strove to excel in them, being both a young microbiologist and a web developer.
-      </div>
-      <div class="buttons-info">
-        <form method="get" action="/images/Resume.pdf">
-          <button type="submit" class="btn btn-outline-dark download-btn button" id="button-7">
-            <div id="dub-arrow"><i class="fa fa-download dl-icon" aria-hidden="true"></i></div>
-            <a class="dl-btn" href="#">Download Resume</a>
-          </button>
-        </form>
-      </div>
+      <div class="paper">
+        <div class="lines">
+          <div class="text" spellcheck="false">
+            <strong>Hello! I'm Mariela Velez!</strong>
+            <br />
+            <br />
+            But call me Mari. I was born in Mayaguez, Puerto Rico where I lived until 2008 when I moved to the mainland USA at 13 years old. In the mainland, I attended Tomball High School and recently graduated from The University of Texas at Austin with a Bachelor of Science in Microbiology and Infectious Diseases.
+            <br />
+            <br />
+            Afterwards, I chose to acquire a certification in full stack web development from UT Austin, having gathered interest in web development throughout my years as an undergrad. I am now proud to say that I have always pursued all of my passions and strove to excel in them, being both a young microbiologist and a web developer.
+        </div>
+        <div class="holes hole-top"></div>
+        <div class="holes hole-middle"></div>
+        <div class="holes hole-bottom"></div>
+      </div> <!--End paper about me -->
+      <div id='cofee'>
+        <div class='plate'>
+          <div class='outer'></div>
+          <div class='inner'></div>
+        </div>
+        <div class='cup'>
+          <div class='grab'></div>
+          <div class='content'>
+            <div class='bubble'></div>
+            <div class='bubble'></div>
+            <div class='bubble'></div>
+          </div>
+          <div class='border'></div>
+        </div>
+      </div> <!--End Cofee cup-->
     </div>
   </section>
 
@@ -249,101 +264,234 @@
     			</li>
     		</ol>
     	</div> <!-- .events-content -->
+      <div class="buttons-info">
+        <form method="get" action="/images/Resume.pdf">
+          <button type="submit" class="btn btn-outline-dark download-btn button" id="button-7">
+            <div id="dub-arrow"><i class="fa fa-download dl-icon" aria-hidden="true"></i></div>
+            <a class="dl-btn" href="#">Download Resume</a>
+          </button>
+        </form>
+      </div>
     </section>
   </section>
+
+
   <!--Skills Section -->
   <section class="skills" id="skill">
     <div class="jumbotron jumbotron-fluid skills-jumb">
       <h1 class="skills-title">SKILLS</h1>
       <hr />
-      <div class="container skill-cont skills-container">
-  			<div class="skillset">
-  				<div class="skill-lockup">
-  					<span class="skill-name mb">HTML5</span><span class="skill-status">95%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level  html-5"></span>
-  					</span>
-  				</div><!-- HTML5 end -->
 
-  				<div class="skill-lockup mr">
-  					<span class="skill-name mb">CSS3</span><span class="skill-status">90%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level css-3"></span>
-  					</span>
-  				</div><!-- CSS3 end -->
+      <section class="intro">
 
-  				<div class="skill-lockup">
-  					<span class="skill-name mb">JQuery</span><span class="skill-status">82%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level j-query"></span>
-  					</span>
-  				</div><!-- JQuery end -->
+      	<div class="intro-block">
+      		<div class="centerfold-wrap">
+      			<div class="hex-master-wrap">
+      					<!-- <div class="hover-notify">Hover Me!</div> -->
+      				<div class="grid-1">
+      					<div class="hex-wrap backend" data-title="LAB SKILLS" data-content="backend-desc" data-color="#505110">
+      							<div class="hex-init"></div>
+      							<div class="hex-borders">
+      								<div class="border-1"></div>
+      								<div class="border-2"></div>
+      								<div class="border-3"></div>
+      							</div>
+      							<div class="label"><img src="/images/microbio.ico"/></div>
+      						<div class="hexagon">
+      							<div class="hex-inner-1">
+      								<div class="hex-inner-2"></div>
+      							</div>
+      						</div>
+      					</div>
+      					<div class="hex-wrap frontend" data-title="SOFT SKILLS" data-content="frontend-desc" data-color="#503b0f">
+      							<div class="hex-init"></div>
+      							<div class="hex-borders">
+      								<div class="border-1"></div>
+      								<div class="border-2"></div>
+      								<div class="border-3"></div>
+      							</div>
+      							<div class="label"><img src="/images/softskill.png"/></div>
+      						<div class="hexagon">
+      							<div class="hex-inner-1">
+      								<div class="hex-inner-2"></div>
+      							</div>
+      						</div>
+      					</div>
+      				</div>
+      				<div class="grid-2">
+      					<div class="hex-wrap html" data-title="FRONTEND" data-content="html-desc" data-color="#565507">
+      							<div class="hex-init"></div>
+      							<div class="hex-borders">
+      								<div class="border-1"></div>
+      								<div class="border-2"></div>
+      								<div class="border-3"></div>
+      							</div>
+      							<div class="label"><img src="images/coding-icon.png"/></div>
+      						<div class="hexagon">
+      							<div class="hex-inner-1">
+      								<div class="hex-inner-2"></div>
+      							</div>
+      						</div>
+      					</div>
+      					<div class="hex-wrap css" data-title="BACKEND" data-content="css-desc" data-color="#564206">
+      							<div class="hex-init"></div>
+      							<div class="hex-borders">
+      								<div class="border-1"></div>
+      								<div class="border-2"></div>
+      								<div class="border-3"></div>
+      							</div>
+      							<div class="label"><img src="/images/backend.png"/></div>
+      						<div class="hexagon">
+      							<div class="hex-inner-1">
+      								<div class="hex-inner-2"></div>
+      							</div>
+      						</div>
+      					</div>
+      					<div class="hex-wrap jquery" data-title="DATABASES" data-content="javascript-desc" data-color="#252b06">
+      							<div class="hex-init"></div>
+      							<div class="hex-borders">
+      								<div class="border-1"></div>
+      								<div class="border-2"></div>
+      								<div class="border-3"></div>
+      							</div>
+      							<div class="label"><img src="/images/database.png"/></div>
+      						<div class="hexagon">
+      							<div class="hex-inner-1">
+      								<div class="hex-inner-2"></div>
+      							</div>
+      						</div>
+      					</div>
+      				</div>
+      				<div class="grid-3">
+      					<div class="hex-wrap gui" data-title="FRAMEWORKS" data-content="gui-desc" data-color="#2b2305">
+      							<div class="hex-init"></div>
+      							<div class="hex-borders">
+      								<div class="border-1"></div>
+      								<div class="border-2"></div>
+      								<div class="border-3"></div>
+      							</div>
+      							<div class="label"><img src="images/framework.png"/></div>
+      						<div class="hexagon">
+      							<div class="hex-inner-1">
+      								<div class="hex-inner-2"></div>
+      							</div>
+      						</div>
+      					</div>
+      					<div class="hex-wrap seo" data-title="OTHER" data-content="seo-desc" data-color="#4e512d">
+      							<div class="hex-init"></div>
+      							<div class="hex-borders">
+      								<div class="border-1"></div>
+      								<div class="border-2"></div>
+      								<div class="border-3"></div>
+      							</div>
+      							<div class="label"><img src="images/devices.png"/></div>
+      						<div class="hexagon">
+      							<div class="hex-inner-1">
+      								<div class="hex-inner-2"></div>
+      							</div>
+      						</div>
+      					</div>
+      				</div>
+      			</div>
 
-  				<div class="skill-lockup mr">
-  					<span class="skill-name mb">JavaScript</span><span class="skill-status">78%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level java-script"></span>
-  					</span>
-  				</div><!-- JavaScript end -->
+      			<div class="code-display">
+      				<div class="code-description">
+      					<div class="backend-desc">
+      						<p class="code-title"></p>
+      						<p><span>Duration:</span>4 Years</p>
+      						<p><span>Techniques:</span></p>
+                    <p class="skills-list">Microbial Isolation</p>
+                    <p class="skills-list">Quantification</p>
+                    <p class="skills-list">Pathogenesis</p>
+                    <p class="skills-list">Polymerase Chain Reaction (PCR)</p>
+                    <p class="skills-list">Agarose Gel Electrophoresis</p>
+                    <p class="skills-list">Comparative Genome Analysis</p>
+                    <p class="skills-list">Reverse Transcription PCR</p>
+                    <p class="skills-list">ChIP-seq</p>
+                    <p class="skills-list">Complement Testing</p>
+                    <p class="skills-list">Gene Knockouts, Restriction Enzymes, and Plasmid Vectors</p>
+                    <p class="skills-list">Biostatistics</p>
+      						<div class="code-icon"></div>
+      					</div>
+      					<div class="frontend-desc">
+      						<p class="code-title"></p>
+      						<!-- <p><span>Duration:</span>6 Years</p> -->
+      						<p><span>Qualities:</span></p>
+                    <p class="skills-list">Self-Awareness</p>
+                    <p class="skills-list">Assertiveness</p>
+                    <p class="skills-list">Self-Confidence</p>
+                    <p class="skills-list">Understanding</p>
+                    <p class="skills-list">Listening</p>
+                    <p class="skills-list">Camaraderie</p>
+                    <p class="skills-list">Resourceful</p>
+                    <p class="skills-list">Self-Learner</p>
+                    <p class="skills-list">Receptive</p>
+      						<div class="code-icon"></div>
+      					</div>
+      					<div class="html-desc">
+      						<p class="code-title"></p>
+      						<p><span>Duration:</span>1 year</p>
+      						<p><span>Technology</span></p>
+                    <p class="skills-list">HTML5</p>
+                    <p class="skills-list">CSS3</p>
+                    <p class="skills-list">JavaScript</p>
+                    <p class="skills-list">React.js</p>
+      						<div class="code-icon"></div>
+      					</div>
+      					<div class="css-desc">
+      						<p class="code-title"></p>
+      						<p><span>Duration:</span>1 year</p>
+      						<p><span>Technology</span></p>
+                    <p class="skills-list">JavaScript</p>
+                    <p class="skills-list">C# (limited)</p>
+                    <p class="skills-list">Python (limited)</p>
+      						<div class="code-icon"></div>
+      					</div>
+      					<div class="javascript-desc">
+      						<p class="code-title"></p>
+      						<p><span>Duration:</span>1 year</p>
+      						<p><span>Technology</span></p>
+                    <p class="skills-list">MongoDB</p>
+                    <p class="skills-list">MySQL</p>
+                    <p class="skills-list">Firebase</p>
+      						<div class="code-icon"></div>
+      					</div>
+      					<div class="gui-desc">
+      						<p class="code-title"></p>
+      						<p><span>Duration:</span>1 year</p>
+      						<p><span>Tools:</span></p>
+                    <p class="skills-list">JQuery</p>
+                    <p class="skills-list">Handlebars</p>
+                    <p class="skills-list">Bootstrap 3 and 4</p>
+                    <p class="skills-list">Node.js</p>
+                    <p class="skills-list">Express</p>
+                    <p class="skills-list">.NET</p>
+                    <p class="skills-list">SASS</p>
+      						<div class="code-icon"></div>
+      					</div>
+      					<div class="seo-desc">
+      						<p class="code-title"></p>
+      						<p><span>Duration:</span>Varies</p>
+      						<p><span>Tools:</span></p>
+                    <p class="skills-list">R Studio</p>
+                    <p class="skills-list">RESTful Web Services</p>
+                    <p class="skills-list">CRUD operations</p>
+                    <p class="skills-list">JSON</p>
+                    <p class="skills-list">Microsoft Excel</p>
+                    <p class="skills-list">Github</p>
+                    <p class="skills-list">Atom</p>
+                    <p class="skills-list">Sublime</p>
+                    <p class="skills-list">Visual Studio Code</p>
+                    <p class="skills-list">Command Line</p>
+      						<div class="code-icon"></div>
+      					</div>
+      				</div>
 
-  				<div class="skill-lockup">
-  					<span class="skill-name mb">MySQL</span><span class="skill-status">70%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level my-sql"></span>
-  					</span>
-  				</div><!-- MySQL end -->
-
-  				<div class="skill-lockup mr">
-  					<span class="skill-name mb">MongoDB</span><span class="skill-status">70%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level mongo-db"></span>
-  					</span>
-  				</div><!-- MongoDB end -->
-
-          <div class="skill-lockup">
-  					<span class="skill-name mb">Express</span><span class="skill-status">65%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level express"></span>
-  					</span>
-  				</div><!-- Express end -->
-
-          <div class="skill-lockup mr">
-  					<span class="skill-name mb">React.js</span><span class="skill-status">40%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level react-js"></span>
-  					</span>
-  				</div><!-- React.js end -->
-
-          <div class="skill-lockup">
-  					<span class="skill-name mb">Node.js</span><span class="skill-status">85%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level node"></span>
-  					</span>
-  				</div><!-- Node.js end -->
-
-          <div class="skill-lockup mr">
-  					<span class="skill-name mb">AJAX</span><span class="skill-status">68%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level ajax"></span>
-  					</span>
-  				</div><!-- AJAX end -->
-
-          <div class="skill-lockup">
-  					<span class="skill-name mb">R</span><span class="skill-status">75%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level r"></span>
-  					</span>
-  				</div><!-- R Studio end -->
-
-          <div class="skill-lockup mr">
-  					<span class="skill-name mb">UI/UX Design</span><span class="skill-status">55%</span>
-  					<span class="skill-bar">
-  						<span class="skill-level ux-design"></span>
-  					</span>
-  				</div><!-- UI/UX Design end -->
-
-  			</div><!-- skillset end -->
-      </div> <!--End container-->
+      			</div>
+      				<div class="hoverblock"></div>
+      		</div> <!-- End Centerfold-Wrap -->
+      	</div>
+      </section>
     </div> <!--End Skills Jumobtron-->
   </section>
 
@@ -352,164 +500,94 @@
     <div class="jumbotron jumbotron-fluid proj-jumb">
         <h1 class="work-title">WORKS</h1>
         <hr />
-      <div class="container">
-        <div class="card-deck">
 
-          <div class="card hover">
-            <img class="card-img-top" src="/images/majikbot.png" alt="screenshot of the majikbot application">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">MAJiKBot</h4>
-                <h5 class="card-sub">Full Stack & Lead Front-End Developer</h5>
-                <p class="card-text">An automated banking chatbot that uses natural language to perform a variety of financial objectives such as transfer of assets, query balances, and checking transactions.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">React.js</li>
-                  <li class="list-group-item">IBM's Watson</li>
-                  <li class="list-group-item">MySQL Database</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://majikbot.herokuapp.com" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
-                </div>
+        <div class="container-fluid bg-3 text-center body">
+      		<div class="container" id="works">
+      			<div class="row" style="margin-top:55px; margin-bottom: 50px;">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                <img class="img-responsive work-image" src="/images/majikbot.png" alt="screenshot of majikbot">
+                  <div class="overlay">
+                    <h2>MAJiKBot: A Banking Chatbot</h2>
+                    <a class="info" target="_blank" href="https://majikbot.herokuapp.com/">LIVE SITE</a>
+                    <p class="work-description">
+                      React.js, IBM Watson, MySQL
+                    </p>
+                 </div>
               </div>
             </div>
-          </div> <!--MajikBot End -->
-
-          <div class="card hover">
-            <img class="card-img-top" src="/images/fitnesskamb.png" alt="screenshot of the fitness kamb application">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">Fitness KAMB</h4>
-                <h5 class="card-sub">Full Stack & Lead Front-End Developer</h5>
-                <p class="card-text">An online fitness resource that allows uers to find fitness centers, eateries, and community events near them to encourage the individual to pursue a healthier lifestyle.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">HTML5 & CSS</li>
-                  <li class="list-group-item">Firebase</li>
-                  <li class="list-group-item">Google & Zomato API</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://marielavlz.github.io/FitnessKAMB/" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
-                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                <img class="img-responsive work-image" src="/images/fitnesskamb.png" alt="screenshot of fitness kamb">
+                  <div class="overlay">
+                    <h2>FitnessKAMB: Fitness Resource</h2>
+                    <a class="info" target="_blank"  href="https://marielavlz.github.io/FitnessKAMB/">LIVE SITE</a>
+                    <p class="work-description">
+                      HTML5, CSS, Firebase, Google API
+                    </p>
+                 </div>
               </div>
             </div>
-          </div>  <!-- Fitness KAMB End -->
-
-          <div class="card hover">
-            <img class="card-img-top" src="/images/asaplocksmith.png" alt="screenshot of the asap locksmith website">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">ASAP Locksmith</h4>
-                <h5 class="card-sub">Full Stack & Lead Front-End Developer</h5>
-                <p class="card-text">A project management tool and website that allows users to request services, to which an administrator tracks the status of the individual jobs submitted.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Handlebars</li>
-                  <li class="list-group-item">MySQL</li>
-                  <li class="list-group-item">Express/CRUD operations</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://asaplocksmith.herokuapp.com/" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
-                </div>
-              </div>
-            </div> <!--End Card Body-->
-          </div> <!--End Card -->
-        </div> <!--END CARD DECK-->
-
-        <!--SECOND ROW -->
-        <div class="card-deck">
-
-          <div class="card hover">
-            <img class="card-img-top" src="/images/nytscraper.png" alt="screenshot of nyt scraper application">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">New York Times Webscraper</h4>
-                <h5 class="card-sub">Full Stack Developer</h5>
-                <p class="card-text">A full stack web application that scraps articles from the New York Times and renders them onto a new page. Users can save or delete articles and write comments on them.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">MongoDB</li>
-                  <li class="list-group-item">Express</li>
-                  <li class="list-group-item">Node.js</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://webscrapervlz.herokuapp.com/" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
-                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                <img class="img-responsive work-image" src="/images/asaplocksmith.png" alt="screenshot of asap locksmith">
+                  <div class="overlay">
+                    <h2>ASAP Locksmith</h2>
+                    <a class="info" target="_blank" href="https://asaplocksmith.herokuapp.com/">LIVE SITE</a>
+                    <p class="work-description">
+                      Handlebars, MySQL, Express, CRUD
+                    </p>
+                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="card hover">
-            <img class="card-img-top" src="/images/crystalcollector.png" alt="screenshot of crystal collector app">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">Crystal Collector</h4>
-                <h5 class="card-sub">Full Stack Developer</h5>
-                <p class="card-text">A single page application which generates a random number and assigns random numbers to each crystal. The user must use the crystals to match the generated number.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Bootstrap</li>
-                  <li class="list-group-item">JavaScript</li>
-                  <li class="list-group-item">JQuery</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://marielavlz.github.io/week-4-game/" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card hover">
-            <img class="card-img-top" src="/images/lotrtrivia.png" alt="Screenshot of the Lord of the Rings Trivia Game">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">Lord of the Rings Trivia</h4>
-                <h5 class="card-sub">Front End Developer</h5>
-                <p class="card-text">A front end trivia game based on Lord of the Rings. Users have 30 seconds to answer each question of varying difficulty and receive a score upon completion of the game.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Bootstrap</li>
-                  <li class="list-group-item">JavaScript</li>
-                  <li class="list-group-item">JQuery</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://marielavlz.github.io/TriviaGame/" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
-                </div>
-              </div>
-            </div> <!--End Card Body-->
-          </div> <!--End Card -->
-        </div> <!--END CARD DECK-->
-      </div> <!--END CONTAINER-->
+      	  </div>
+      		<div class="row" style="margin-top: 10px">
+      			<div class="col-md-4 col-sm-6 col-xs-12">
+      				<div class="hovereffect">
+      				<img class="img-responsive work-image" src="/images/nytscraper.png" alt="new york times web scraper">
+      					<div class="overlay">
+      						<h2>NYT Webscraper</h2>
+      						<a class="info" target="_blank" href="https://webscrapervlz.herokuapp.com/">LIVE SITE</a>
+                  <p class="work-description">
+                    MongoDB, Mongoose, Node, Express
+                  </p>
+      				 </div>
+      			</div>
+      		</div>
+      		<div class="col-md-4 col-sm-6 col-xs-12">
+      				<div class="hovereffect">
+      				<img class="img-responsive work-image" src="images/crystalcollector.png" alt="crystal collector game">
+      					<div class="overlay">
+      						<h2>Crystal Collector</h2>
+      						<a class="info" target="_blank" href="https://marielavlz.github.io/week-4-game/">LIVE SITE</a>
+                  <p class="work-description">
+                    Bootstrap, JavaScript, JQuery
+                  </p>
+      				 </div>
+      			</div>
+      		</div>
+      		<div class="col-md-4 col-sm-6 col-xs-12">
+      				<div class="hovereffect">
+      				<img class="img-responsive work-image" src="images/lotrtrivia.png" alt="lord of the rings trivia game screenshot">
+      					<div class="overlay">
+      						<h2>Lord of the Rings Trivia Game</h2>
+      						<a class="info" target="_blank" href="https://marielavlz.github.io/TriviaGame/">LIVE SITE</a>
+                  <p class="work-description">
+                    Bootstrap, JavaScript, JQuery
+                  </p>
+      				 </div>
+      			</div>
+      		</div>
+      	</div>
+        </div>
+      </div>
     </div> <!--END JUMBOTRON-->
   </section>
   <!--Contact me Section -->
   <section class="contact-me" id="contact">
     <h1 class="contact-title">Want to Chat? Send Me an Email!</h1>
     <hr />
+    <div class="coffee-mug"></div>
     <section class="container contact-cont">
       <div class="envelope">
         <div class="back"></div>
@@ -601,10 +679,9 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <!-- Personal JS and Jquery -->
-  <!--JQuery CDN-->
-  <!-- <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script> -->
   <script src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/wow.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
   <script type="text/javascript" src="js/javascript.js"></script>
   <script type="text/javascript" src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
