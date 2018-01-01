@@ -911,7 +911,7 @@ Main Components
 }
 
 .proj-jumb{
-	height: 900px;
+	height: 67%;
 	position: relative;
 	top: -60px;
 	padding-bottom: 70px;
@@ -1904,5 +1904,5 @@ input:required:invalid {
 }
 
 .whole-site{
-	height: 4800px;
+  height: 5490px;
 }
