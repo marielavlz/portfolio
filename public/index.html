@@ -14,16 +14,19 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!--Personal CSS -->
   <link rel="stylesheet" type="text/css" href="/css/reset.css"/>
-  <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/main.css"/>
   <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
-  <link rel="stylesheet" type="text/css" href="/css/mediaqueries.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="/css/mediaqueries.css" /> -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
  	<link rel="icon" type="image/png" href="/images/coffeeicon.png"/>
  	<link rel="SHORTCUT ICON" href="/images/coffeeicon.png"/>
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet" />
   <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Dosis|Lato|Quicksand|Raleway|Slabo+27px" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Handlee|Questrial|Raleway|Satisfy" rel="stylesheet">
-  <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Lato|Quicksand|Raleway|Slabo+27px|Euphoria+Script|Meddon" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Handlee|Questrial|Raleway|Satisfy|Nixie+One|Prosto+One" rel="stylesheet">
+  <!-- <script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script> -->
 
 </head>
 
@@ -36,7 +39,7 @@
       <div class="flex-container">
         <div class="navbar-header flex-item">
           <a class="navbar-brand" href="#top">
-            <img class="logo-coffee" src="/images/codecoffee.png" alt="icon of a coffee cup"/>
+            <!-- <img class="logo-coffee" src="/images/codecoffee.png" alt="icon of a coffee cup"/> -->
             Mariela Velez</a>
         </div>
         <div class="header-links">
@@ -45,9 +48,6 @@
           </ul>
           <ul class="nav navbar-nav flex-item hidden-xs">
             <li><a href="#exp">EDUCATION</a></li>
-          </ul>
-          <ul class="nav navbar-nav flex-item hidden-xs">
-            <li><a href="#skill">SKILLS</a></li>
           </ul>
           <ul class="nav navbar-nav flex-item hidden-xs">
             <li><a href="#proj">WORK</a></li>
@@ -76,753 +76,447 @@
   </nav>
 
 <div class="whole-site">
-
   <!--Main Container with mp4-->
-  <div class="header-container">
-		<div class="video-container">
-			<video preload="true" autoplay="true" loop="loop" muted>
-				<source src="/images/coding.mp4" type="video/mp4" />
-			</video>
-      <div class="section aboutme" data-anchor="aboutme" id="top">
-        <div class="opaque-bg animated fadeInDown">
-          <h1 class="full-name" style="color:white; font-family: 'Satisfy',cursive;">Mariela Velez</h1>
-          <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
-        </div>
-      </div> <!--End about me-->
-		</div>
-	</div>
-  <!--About Me Section-->
-  <section class="about-me" id="about">
-    <div class="container about-cont">
-      <div class="jumbotron about-jumb">
-        <div class="row">
-          <img class="img-circle portrait" alt="portrait of Mariela Velez" src="/images/me.jpg"/>
-          <!-- <div class="icons">
-            <a class="icon git-icon" href="https://github.com/marielavlz" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-            <a class="icon linkedin-icon" href="https://www.linkedin.com/in/mariela-velez-natal/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          </div> -->
-        </div> <!--Row-->
-      </div> <!--Jumbotron-->
-    </div> <!--about jumb-->
-  </section>
-  <section class="about-text" id="abtxt">
-    <div class="jumbotron jumbotron-fluid about-txt-cont">
-      <div class="paper">
-        <div class="lines">
-          <div class="text" spellcheck="false">
-            <strong>Hello! I'm Mariela Velez!</strong>
-            <br />
-            <br />
-            But call me Mari. I was born in Mayaguez, Puerto Rico where I lived until 2008 when I moved to the mainland USA at 13 years old. In the mainland, I attended Tomball High School and recently graduated from The University of Texas at Austin with a Bachelor of Science in Microbiology and Infectious Diseases.
-            <br />
-            <br />
-            Afterwards, I chose to acquire a certification in full stack web development from UT Austin, having gathered interest in web development throughout my years as an undergrad. I am now proud to say that I have always pursued all of my passions and strove to excel in them, being both a young microbiologist and a web developer.
-        </div>
-        <div class="holes hole-top"></div>
-        <div class="holes hole-middle"></div>
-        <div class="holes hole-bottom"></div>
-      </div> <!--End paper about me -->
-      <div id='cofee'>
-        <div class='plate'>
-          <div class='outer'></div>
-          <div class='inner'></div>
-        </div>
-        <div class='cup'>
-          <div class='grab'></div>
-          <div class='content'>
-            <div class='bubble'></div>
-            <div class='bubble'></div>
-            <div class='bubble'></div>
-          </div>
-          <div class='border'></div>
-        </div>
-      </div> <!--End Cofee cup-->
-    </div>
-  </section>
+    <div class="header-container">
+  		<div class="video-container">
+  			<video preload="true" autoplay="true" loop="loop" muted>
+  				<source src="/images/laptop.mp4" type="video/mp4" />
+  			</video>
+        <div class="aboutme" data-anchor="aboutme" id="top">
+          <h1 class="center text-center">
+            <p>Hi, my name is <strong class="middle-font" style="font-family:'Meddon', cursive;
+">Mariela Velez</strong></p>
+            <p>and I'm <span class="element"></span></p>
+          </h1>
+        </div> <!--End about me-->
+  		</div>
+  	</div>
 
-
-  <!--Previous Experience Section -->
-  <section class="experience" id="exp">
-    <h1 class="edu-title">EDUCATION/EXPERIENCE</h1>
-    <hr />
-    <section class="cd-horizontal-timeline">
-    	<div class="timeline">
-    		<div class="events-wrapper">
-    			<div class="events">
-    				<ol>
-    					<li><a href="#0" data-date="16/01/2014" class="selected">June 2012</a></li>
-    					<li><a href="#0" data-date="28/02/2014">Aug 2012</a></li>
-    					<li><a href="#0" data-date="20/04/2014">Jan 2013</a></li>
-    					<li><a href="#0" data-date="20/05/2014">Aug 2014</a></li>
-    					<li><a href="#0" data-date="09/07/2014">May 2015</a></li>
-    					<li><a href="#0" data-date="30/08/2014">Aug 2016</a></li>
-    					<li><a href="#0" data-date="15/09/2014">Jan 2017</a></li>
-    					<li><a href="#0" data-date="01/11/2014">May 2017</a></li>
-    					<li><a href="#0" data-date="10/12/2014">Jun 2017</a></li>
-    					<li><a href="#0" data-date="19/01/2015">Sep 2017</a></li>
-    					<li><a href="#0" data-date="03/03/2015">Dec 2017</a></li>
-    				</ol>
-
-    				<span class="filling-line" aria-hidden="true"></span>
-    			</div> <!-- .events -->
-    		</div> <!-- .events-wrapper -->
-
-    		<ul class="cd-timeline-navigation">
-    			<li><a href="#0" class="prev inactive">Prev</a></li>
-    			<li><a href="#0" class="next">Next</a></li>
-    		</ul> <!-- .cd-timeline-navigation -->
-    	</div> <!-- .timeline -->
-
-    	<div class="events-content">
-    		<ol>
-    			<li class="selected" data-date="16/01/2014">
-    				<h2>High School Graduate</h2>
-    				<em>June 2nd, 2012</em>
-    				<p>
-    					Graduated Summa Cum Laude from Tomball High School on June 2012.
-    				</p>
-    			</li>
-
-    			<li data-date="28/02/2014">
-    				<h2>Undergraduate Student</h2>
-    				<em>August, 2012</em>
-    				<p>
-    					Began undergaduate education at the University of Texas at Austin. Initially a human biology major.
-    				</p>
-    			</li>
-
-    			<li data-date="20/04/2014">
-    				<h2>Freshman Researcher</h2>
-    				<em>January, 2013</em>
-    				<p>
-    					Participated in the Freshman Research Initiative. Prepared and conducted an experiment using crickets as my organism of study.
-    				</p>
-    			</li>
-
-    			<li data-date="20/05/2014">
-    				<h2>Undergraduate Bacteriology Researcher</h2>
-    				<em>August, 2014 - June, 2016</em>
-    				<p>
-    					Undergraduate research focused on bacterial physiology and communication. Model organisms included <i>P. aeruginosa</i> and several species of streptococci. Responsible for growing and isolating samples.
-    				</p>
-    			</li>
-
-    			<li data-date="09/07/2014">
-    				<h2>Hospital Volunteer</h2>
-    				<em>May, 2015</em>
-    				<p>
-    					Volunteer at the Texas Children's Hospital in Houston, Texas. Responsible for Spanish-English translations and communicating with low income families about available resources.
-    				</p>
-    			</li>
-
-    			<li data-date="30/08/2014">
-    				<h2>Clinical Bacteriology Student</h2>
-    				<em>August, 2016 - January, 2017</em>
-    				<p>
-    					Student in a clinical bacteriology laboratory responsible for isolating and identifying bacterial species from various patient sources.
-    				</p>
-    			</li>
-
-    			<li data-date="15/09/2014">
-    				<h2>Undergraduate Virology Researcher</h2>
-    				<em>January, 2017 - May, 2017</em>
-    				<p>
-    					Undergraduate research focused on viral pathogenesis in model organisms such as mice. Responsible for isolating and quantifying viral load.
-    				</p>
-    			</li>
-
-    			<li data-date="01/11/2014">
-    				<h2>UT Austin Alumni</h2>
-    				<em>May, 2017</em>
-    				<p>
-    					Graduated the University of Texas at Austin with a Bachelor of Science in Microbiology and Infectious Diseases. 3.6 GPA.
-    				</p>
-    			</li>
-
-    			<li data-date="10/12/2014">
-    				<h2>Web Development Student</h2>
-    				<em>June, 2017 - December, 2017</em>
-    				<p>
-    					Began an intensive full stack web development bootcamp dedicated to designing and buiding web applications focusing on skills such as JavaScript, HTML, CSS, JQuery, React.js, MySQL, and the MERN stack.
-    				</p>
-    			</li>
-
-    			<li data-date="19/01/2015">
-    				<h2>Freelance Full Stack Developer</h2>
-    				<em>September, 2017 - November, 2017</em>
-    				<p>
-    					Worked as a project manager and full stack developer in a team of 4 to design and create a database backed website for a local Houston business. Lead the front end design team, communicated with the client, and facilitated project delivery.
-    				</p>
-    			</li>
-
-    			<li data-date="03/03/2015">
-    				<h2>Full Stack Web Developer</h2>
-    				<em>December, 2017</em>
-    				<p>
-    					Graduated from my full stack flex bootcamp. Capable of both backend and frontend development. Specialise in frontend development with a focus on HTML, CSS, Bootstrap, Materialize, JavaScript, and JQuery as well as React.js.
-    				</p>
-    			</li>
-    		</ol>
-    	</div> <!-- .events-content -->
-      <div class="buttons-info">
-        <form method="get" action="/images/Resume.pdf">
-          <button type="submit" class="btn btn-outline-dark download-btn button" id="button-7">
-            <div id="dub-arrow"><i class="fa fa-download dl-icon" aria-hidden="true"></i></div>
-            <a class="dl-btn" href="#">Download Resume</a>
-          </button>
-        </form>
-      </div>
-    </section>
-  </section>
-
-
-  <!--Skills Section -->
-  <section class="skills" id="skill">
-    <div class="jumbotron jumbotron-fluid skills-jumb">
-      <h1 class="skills-title">SKILLS</h1>
-      <hr />
-
-      <section class="intro">
-
-      	<div class="intro-block">
-      		<div class="centerfold-wrap">
-      			<div class="hex-master-wrap">
-      					<!-- <div class="hover-notify">Hover Me!</div> -->
-      				<div class="grid-1">
-      					<div class="hex-wrap backend" data-title="LAB SKILLS" data-content="backend-desc" data-color="#505110">
-      							<div class="hex-init"></div>
-      							<div class="hex-borders">
-      								<div class="border-1"></div>
-      								<div class="border-2"></div>
-      								<div class="border-3"></div>
-      							</div>
-      							<div class="label"><img src="/images/microbio.ico"/></div>
-      						<div class="hexagon">
-      							<div class="hex-inner-1">
-      								<div class="hex-inner-2"></div>
-      							</div>
-      						</div>
-      					</div>
-      					<div class="hex-wrap frontend" data-title="SOFT SKILLS" data-content="frontend-desc" data-color="#503b0f">
-      							<div class="hex-init"></div>
-      							<div class="hex-borders">
-      								<div class="border-1"></div>
-      								<div class="border-2"></div>
-      								<div class="border-3"></div>
-      							</div>
-      							<div class="label"><img src="/images/softskill.png"/></div>
-      						<div class="hexagon">
-      							<div class="hex-inner-1">
-      								<div class="hex-inner-2"></div>
-      							</div>
-      						</div>
-      					</div>
-      				</div>
-      				<div class="grid-2">
-      					<div class="hex-wrap html" data-title="FRONTEND" data-content="html-desc" data-color="#565507">
-      							<div class="hex-init"></div>
-      							<div class="hex-borders">
-      								<div class="border-1"></div>
-      								<div class="border-2"></div>
-      								<div class="border-3"></div>
-      							</div>
-      							<div class="label"><img src="images/coding-icon.png"/></div>
-      						<div class="hexagon">
-      							<div class="hex-inner-1">
-      								<div class="hex-inner-2"></div>
-      							</div>
-      						</div>
-      					</div>
-      					<div class="hex-wrap css" data-title="BACKEND" data-content="css-desc" data-color="#564206">
-      							<div class="hex-init"></div>
-      							<div class="hex-borders">
-      								<div class="border-1"></div>
-      								<div class="border-2"></div>
-      								<div class="border-3"></div>
-      							</div>
-      							<div class="label"><img src="/images/backend.png"/></div>
-      						<div class="hexagon">
-      							<div class="hex-inner-1">
-      								<div class="hex-inner-2"></div>
-      							</div>
-      						</div>
-      					</div>
-      					<div class="hex-wrap jquery" data-title="DATABASES" data-content="javascript-desc" data-color="#252b06">
-      							<div class="hex-init"></div>
-      							<div class="hex-borders">
-      								<div class="border-1"></div>
-      								<div class="border-2"></div>
-      								<div class="border-3"></div>
-      							</div>
-      							<div class="label"><img src="/images/database.png"/></div>
-      						<div class="hexagon">
-      							<div class="hex-inner-1">
-      								<div class="hex-inner-2"></div>
-      							</div>
-      						</div>
-      					</div>
-      				</div>
-      				<div class="grid-3">
-      					<div class="hex-wrap gui" data-title="FRAMEWORKS" data-content="gui-desc" data-color="#2b2305">
-      							<div class="hex-init"></div>
-      							<div class="hex-borders">
-      								<div class="border-1"></div>
-      								<div class="border-2"></div>
-      								<div class="border-3"></div>
-      							</div>
-      							<div class="label"><img src="images/framework.png"/></div>
-      						<div class="hexagon">
-      							<div class="hex-inner-1">
-      								<div class="hex-inner-2"></div>
-      							</div>
-      						</div>
-      					</div>
-      					<div class="hex-wrap seo" data-title="OTHER" data-content="seo-desc" data-color="#4e512d">
-      							<div class="hex-init"></div>
-      							<div class="hex-borders">
-      								<div class="border-1"></div>
-      								<div class="border-2"></div>
-      								<div class="border-3"></div>
-      							</div>
-      							<div class="label"><img src="images/devices.png"/></div>
-      						<div class="hexagon">
-      							<div class="hex-inner-1">
-      								<div class="hex-inner-2"></div>
-      							</div>
-      						</div>
-      					</div>
-      				</div>
-      			</div>
-
-      			<div class="code-display">
-      				<div class="code-description">
-      					<div class="backend-desc">
-      						<p class="code-title"></p>
-      						<p><span>Duration:</span>4 Years</p>
-      						<p><span>Techniques:</span></p>
-                    <p class="skills-list">Microbial Isolation</p>
-                    <p class="skills-list">Quantification</p>
-                    <p class="skills-list">Pathogenesis</p>
-                    <p class="skills-list">Polymerase Chain Reaction (PCR)</p>
-                    <p class="skills-list">Agarose Gel Electrophoresis</p>
-                    <p class="skills-list">Comparative Genome Analysis</p>
-                    <p class="skills-list">Reverse Transcription PCR</p>
-                    <p class="skills-list">ChIP-seq</p>
-                    <p class="skills-list">Complement Testing</p>
-                    <p class="skills-list">Gene Knockouts, Restriction Enzymes, and Plasmid Vectors</p>
-                    <p class="skills-list">Biostatistics</p>
-      						<div class="code-icon"></div>
-      					</div>
-      					<div class="frontend-desc">
-      						<p class="code-title"></p>
-      						<!-- <p><span>Duration:</span>6 Years</p> -->
-      						<p><span>Qualities:</span></p>
-                    <p class="skills-list">Self-Awareness</p>
-                    <p class="skills-list">Assertiveness</p>
-                    <p class="skills-list">Self-Confidence</p>
-                    <p class="skills-list">Understanding</p>
-                    <p class="skills-list">Listening</p>
-                    <p class="skills-list">Camaraderie</p>
-                    <p class="skills-list">Resourceful</p>
-                    <p class="skills-list">Self-Learner</p>
-                    <p class="skills-list">Receptive</p>
-      						<div class="code-icon"></div>
-      					</div>
-      					<div class="html-desc">
-      						<p class="code-title"></p>
-      						<p><span>Duration:</span>1 year</p>
-      						<p><span>Technology</span></p>
-                    <p class="skills-list">HTML5</p>
-                    <p class="skills-list">CSS3</p>
-                    <p class="skills-list">JavaScript</p>
-                    <p class="skills-list">React.js</p>
-      						<div class="code-icon"></div>
-      					</div>
-      					<div class="css-desc">
-      						<p class="code-title"></p>
-      						<p><span>Duration:</span>1 year</p>
-      						<p><span>Technology</span></p>
-                    <p class="skills-list">JavaScript</p>
-                    <p class="skills-list">C# (limited)</p>
-                    <p class="skills-list">Python (limited)</p>
-      						<div class="code-icon"></div>
-      					</div>
-      					<div class="javascript-desc">
-      						<p class="code-title"></p>
-      						<p><span>Duration:</span>1 year</p>
-      						<p><span>Technology</span></p>
-                    <p class="skills-list">MongoDB</p>
-                    <p class="skills-list">MySQL</p>
-                    <p class="skills-list">Firebase</p>
-      						<div class="code-icon"></div>
-      					</div>
-      					<div class="gui-desc">
-      						<p class="code-title"></p>
-      						<p><span>Duration:</span>1 year</p>
-      						<p><span>Tools:</span></p>
-                    <p class="skills-list">JQuery</p>
-                    <p class="skills-list">Handlebars</p>
-                    <p class="skills-list">Bootstrap 3 and 4</p>
-                    <p class="skills-list">Node.js</p>
-                    <p class="skills-list">Express</p>
-                    <p class="skills-list">.NET</p>
-                    <p class="skills-list">SASS</p>
-      						<div class="code-icon"></div>
-      					</div>
-      					<div class="seo-desc">
-      						<p class="code-title"></p>
-      						<p><span>Duration:</span>Varies</p>
-      						<p><span>Tools:</span></p>
-                    <p class="skills-list">R Studio</p>
-                    <p class="skills-list">RESTful Web Services</p>
-                    <p class="skills-list">CRUD operations</p>
-                    <p class="skills-list">JSON</p>
-                    <p class="skills-list">Microsoft Excel</p>
-                    <p class="skills-list">Github</p>
-                    <p class="skills-list">Atom</p>
-                    <p class="skills-list">Sublime</p>
-                    <p class="skills-list">Visual Studio Code</p>
-                    <p class="skills-list">Command Line</p>
-      						<div class="code-icon"></div>
-      					</div>
-      				</div>
-
-      			</div>
-      				<div class="hoverblock"></div>
-      		</div> <!-- End Centerfold-Wrap -->
-      	</div>
-      </section>
-    </div> <!--End Skills Jumobtron-->
-  </section>
-
-    <!--Project Section -->
-  <section class="projects" id="proj">
-    <div class="jumbotron jumbotron-fluid proj-jumb">
-        <h1 class="work-title">WORKS</h1>
-        <hr />
-
+  <section class="about-me" id="abtxt">
+    <!-- *** ABOUT ***
+_________________________________________________________ -->
+    <div class="section" id="about">
         <div class="container">
-        <div class="card-deck">
-
-          <div class="card hover">
-            <img class="card-img-top" src="/images/majikbot.png" alt="screenshot of the majikbot application">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">MAJiKBot</h4>
-                <h5 class="card-sub">Full Stack & Lead Front-End Developer</h5>
-                <p class="card-text">An automated banking chatbot that uses natural language to perform a variety of financial objectives such as transfer of assets, query balances, and checking transactions.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">React.js</li>
-                  <li class="list-group-item">IBM's Watson</li>
-                  <li class="list-group-item">MySQL Database</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://majikbot.herokuapp.com" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="title" data-animate="fadeInDown">About me</h2>
                 </div>
-              </div>
-            </div>
-          </div> <!--MajikBot End -->
+                <div class="col-sm-12">
+                    <div class="row">
 
-          <div class="card hover">
-            <img class="card-img-top" src="/images/fitnesskamb.png" alt="screenshot of the fitness kamb application">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">Fitness KAMB</h4>
-                <h5 class="card-sub">Full Stack & Lead Front-End Developer</h5>
-                <p class="card-text">An online fitness resource that allows uers to find fitness centers, eateries, and community events near them to encourage users to pursue a healthier lifestyle.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">HTML5 & CSS</li>
-                  <li class="list-group-item">Firebase</li>
-                  <li class="list-group-item">Google & Zomato API</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://marielavlz.github.io/FitnessKAMB/" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
+                        <div class="col-sm-6 text-left" style="font-size: 14.6px;" data-animate="fadeInUp">
+
+                            <p>Hello! My name is <strong>Mariela Velez</strong>.</p>
+
+                            <p> But call me <strong>Mari</strong>. I was born in <strong>Mayaguez, Puerto Rico</strong> where I lived until 2008 when I moved to the mainland USA at 13 years old. In <strong>Texas</strong>, I attended Tomball High School and recently graduated from <strong>The University of Texas at Austin</strong> with a Bachelor of Science in Microbiology and Infectious Diseases. </p>
+
+                            <p>Afterwards, I chose to acquire a certification in <strong>Full Stack Web Development</strong> from UT Austin, having gathered interest in web development throughout my years as an undergrad. I am now proud to say that I have always pursued all of my passions and strove to excel in them, being both a young <strong>microbiologist</strong> and a <strong>web developer</strong>.</p>
+
+                            <p>During my free time, I enjoy the works of JRR Tolkien, JK Rowling, and George RR Martin, my favourite genre being fantasy. I also love classic stories such as <i>The Picture of Dorian Grey</i> and <i>To Kill a Mockingbird</i>. Lastly, you can find me any time of the day sitting down and enjoying a hot cup of tea and sugar biscuits.</p>
+
+                        </div>
+
+                        <div class="col-sm-6" data-animate="fadeInUp">
+
+                            <div class="skill-item">
+                                <div class="progress-title">
+                                    HTML5/CSS3/JavaScript/React.js
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-skill1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                        <span class="sr-only">90</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="progress-title">
+                                    JavaScript/C#/Python
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                        <span class="sr-only">50</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="progress-title">
+                                    MongoDB/MySQL/Firebase
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-skill3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                        <span class="sr-only">70</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="progress-title">
+                                    JQuery/Bootstrap/Handlebars/Node/Express
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-skill4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                        <span class="sr-only">80</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="progress-title">
+                                    R Studio/RESTful/CRUD/Command Line
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-skill5" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                        <span class="sr-only">60</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>  <!-- Fitness KAMB End -->
-
-          <div class="card hover">
-            <img class="card-img-top" src="/images/asaplocksmith.png" alt="screenshot of the asap locksmith website">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">ASAP Locksmith</h4>
-                <h5 class="card-sub">Full Stack & Lead Front-End Developer</h5>
-                <p class="card-text">A project management tool and website that allows users to request services, to which an administrator tracks the status of the individual jobs submitted.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Handlebars</li>
-                  <li class="list-group-item">MySQL</li>
-                  <li class="list-group-item">Express/CRUD operations</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://asaplocksmith.herokuapp.com/" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
+                <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 mt-big" data-animate="bounceIn">
+                    <img src="images/me.jpg" class="image img-circle img-responsive" style="margin-top: 20px;"alt="This is me - IT worker">
                 </div>
-              </div>
-            </div> <!--End Card Body-->
-          </div> <!--End Card -->
-        </div> <!--END CARD DECK-->
-
-        <!--SECOND ROW -->
-        <div class="card-deck">
-
-          <div class="card hover">
-            <img class="card-img-top" src="/images/nytscraper.png" alt="screenshot of nyt scraper application">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">New York Times Webscraper</h4>
-                <h5 class="card-sub">Full Stack Developer</h5>
-                <p class="card-text">A full stack web application that scraps articles from the New York Times and renders them onto a new page. Users can save or delete articles and write comments on them.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">MongoDB</li>
-                  <li class="list-group-item">Express</li>
-                  <li class="list-group-item">Node.js</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://webscrapervlz.herokuapp.com/" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
-                </div>
-              </div>
             </div>
-          </div>
-
-          <div class="card hover">
-            <img class="card-img-top" src="/images/crystalcollector.png" alt="screenshot of crystal collector app">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">Crystal Collector</h4>
-                <h5 class="card-sub">Full Stack Developer</h5>
-                <p class="card-text">A single page application which generates a random number and assigns random numbers to each crystal. The user must use the crystals to match the generated number.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Bootstrap</li>
-                  <li class="list-group-item">JavaScript</li>
-                  <li class="list-group-item">JQuery</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://marielavlz.github.io/week-4-game/" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card hover">
-            <img class="card-img-top" src="/images/lotrtrivia.png" alt="Screenshot of the Lord of the Rings Trivia Game">
-            <div class="card-body">
-              <img class="coffee-cup" src="/images/coffeeicon.png" alt="icon of a coffee cup">
-              <div class="card-content">
-                <h4 class="card-title">Lord of the Rings Trivia</h4>
-                <h5 class="card-sub">Front End Developer</h5>
-                <p class="card-text">A front end trivia game based on Lord of the Rings. Users have 30 seconds to answer each question of varying difficulty and receive a score upon completion of the game.</p>
-                <p class="card-text tools">
-                  Tools <i class="fa fa-cogs" aria-hidden="true"></i>
-                </p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Bootstrap</li>
-                  <li class="list-group-item">JavaScript</li>
-                  <li class="list-group-item">JQuery</li>
-                  <li></li>
-                </ul>
-                <div class="live-btns">
-                  <a href="https://marielavlz.github.io/TriviaGame/" target="_blank" role="button" class="btn btn-outline-light live-btn">LIVE SITE</a>
-                </div>
-              </div>
-            </div> <!--End Card Body-->
-          </div> <!--End Card -->
-        </div> <!--END CARD DECK-->
-      </div> <!--END CONTAINER-->
-
-        <!-- <div class="container-fluid bg-3 text-center body">
-      		<div class="container" id="works">
-      			<div class="row" style="margin-top:55px; margin-bottom: 50px;">
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                <img class="img-responsive work-image" src="/images/majikbot.png" alt="screenshot of majikbot">
-                  <div class="overlay">
-                    <h2>MAJiKBot: A Banking Chatbot</h2>
-                    <a class="info" target="_blank" href="https://majikbot.herokuapp.com/">LIVE SITE</a>
-                    <p class="work-description">
-                      React.js, IBM Watson, MySQL
-                    </p>
-                 </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                <img class="img-responsive work-image" src="/images/fitnesskamb.png" alt="screenshot of fitness kamb">
-                  <div class="overlay">
-                    <h2>FitnessKAMB: Fitness Resource</h2>
-                    <a class="info" target="_blank"  href="https://marielavlz.github.io/FitnessKAMB/">LIVE SITE</a>
-                    <p class="work-description">
-                      HTML5, CSS, Firebase, Google API
-                    </p>
-                 </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                <img class="img-responsive work-image" src="/images/asaplocksmith.png" alt="screenshot of asap locksmith">
-                  <div class="overlay">
-                    <h2>ASAP Locksmith</h2>
-                    <a class="info" target="_blank" href="https://asaplocksmith.herokuapp.com/">LIVE SITE</a>
-                    <p class="work-description">
-                      Handlebars, MySQL, Express, CRUD
-                    </p>
-                 </div>
-              </div>
-            </div>
-      	  </div>
-      		<div class="row" style="margin-top: 10px">
-      			<div class="col-md-4 col-sm-6 col-xs-12">
-      				<div class="hovereffect">
-      				<img class="img-responsive work-image" src="/images/nytscraper.png" alt="new york times web scraper">
-      					<div class="overlay">
-      						<h2>NYT Webscraper</h2>
-      						<a class="info" target="_blank" href="https://webscrapervlz.herokuapp.com/">LIVE SITE</a>
-                  <p class="work-description">
-                    MongoDB, Mongoose, Node, Express
-                  </p>
-      				 </div>
-      			</div>
-      		</div>
-      		<div class="col-md-4 col-sm-6 col-xs-12">
-      				<div class="hovereffect">
-      				<img class="img-responsive work-image" src="images/crystalcollector.png" alt="crystal collector game">
-      					<div class="overlay">
-      						<h2>Crystal Collector</h2>
-      						<a class="info" target="_blank" href="https://marielavlz.github.io/week-4-game/">LIVE SITE</a>
-                  <p class="work-description">
-                    Bootstrap, JavaScript, JQuery
-                  </p>
-      				 </div>
-      			</div>
-      		</div>
-      		<div class="col-md-4 col-sm-6 col-xs-12">
-      				<div class="hovereffect">
-      				<img class="img-responsive work-image" src="images/lotrtrivia.png" alt="lord of the rings trivia game screenshot">
-      					<div class="overlay">
-      						<h2>Lord of the Rings Trivia Game</h2>
-      						<a class="info" target="_blank" href="https://marielavlz.github.io/TriviaGame/">LIVE SITE</a>
-                  <p class="work-description">
-                    Bootstrap, JavaScript, JQuery
-                  </p>
-      				 </div>
-      			</div>
-      		</div>
-      	</div>
         </div>
-      </div> -->
-    </div> <!--END JUMBOTRON-->
+    </div>
+    <!-- /#about -->
+    <!-- *** ABOUT END *** -->
   </section>
-  <!--Contact me Section -->
-  <section class="contact-me" id="contact">
-    <h1 class="contact-title">Want to Chat? Send Me an Email!</h1>
-    <hr />
-    <div class="coffee-mug"></div>
-    <section class="container contact-cont">
-      <div class="envelope">
-        <div class="back"></div>
-        <div class="letter-wrap">
-          <form method="POST" name="contact-form" action="contact-form-handler.php" class="letter" id="contact-form">
-            <p>Dear Mariela Velez,</p>
-            <p>My
-              <label for="your-name">name</label> is
-              <input type="text" name="your-name" id="your-name" minlength="3" placeholder="(your name here)" required> and
-            my
-              <label for="email">email address</label> is
-              <input type="email" name="your-email" id="email" placeholder="(your email address)" required>.
 
-            I have a
-              <label for="your-message">message</label> for you,
-            </p>
-
-            <p>
-              <textarea name="your-message" id="your-message" placeholder="(your msg here)" class="expanding" required></textarea>
-            </p>
-            <p style="text-align: center; position: relative; right: 33px;">
-              <input class="send" type="submit" value="Send"/>
-            </p>
-          </form>
-        </div>
-        <div class="front">
-          <div class="inner">
-            <div class="triangle left"></div>
-            <div class="triangle right"></div>
-            <div class="rounded"></div>
-            <div class="bottom"></div>
+  <!-- *** SHOWCASE ***
+_________________________________________________________ -->
+  <div class="section text-parallax parallax-image1" id="services">
+      <div class="container">
+          <div class="row showcase">
+              <p
+              style="color: white;
+              text-align: center;
+              position: relative;
+              left: 30%;
+              font-size: 22px;">
+               Download my full resume for more information!
+              </p>
+              <div class="buttons-info">
+                <form method="get" action="/images/Resume.pdf">
+                  <button type="submit" class="btn btn-outline-dark download-btn button" id="button-7">
+                    <div id="dub-arrow"><i class="fa fa-download dl-icon" aria-hidden="true"></i></div>
+                    <a class="dl-btn" href="#">Download Resume</a>
+                  </button>
+                </form>
+              </div>
           </div>
-        </div>
-        <div class="cover">
-          <div class="top-wrap backface">
-            <div class="inner">
-              <div class="top-center"></div>
-              <div class="top"></div>
-            </div>
-          </div>
-          <div class="top-wrap frontface">
-            <div class="inner">
-              <div class="top-center"></div>
-              <div class="top"></div>
-            </div>
-          </div>
-        </div>
+          <!-- /.row -->
       </div>
-      <p class="notif">Message Sent! We'll be in touch soon!</p>
-    </div>
-  </section>
-</section>
+      <!-- /.container -->
 
-<script language="JavaScript">
-var frmvalidator  = new Validator("contact-form");
-frmvalidator.addValidation("your-name","req");
-frmvalidator.addValidation("email","req");
-frmvalidator.addValidation("email","email","Please enter a valid email address");
-</script>
-
-
-  <!--Footer-->
-
-  <footer class="container-fluid footer">
-    <div class="footer-content">
-      <h3>CONNECT WITH ME</h3>
-        <div class="social-links">
-          <span><a href="https://www.linkedin.com/in/mariela-velez-natal/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
-          <span><a href="https://github.com/marielavlz" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
-          <span><a target="_blank" href="https://twitter.com/mari_withani" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
-          <span><a href="https://codepen.io/marivlz/" target="_blank"><i class="fa fa-codepen fa-2x"></i></a></span>
-        </div>
-    </div>
-    <div class="center-this-thang">
-      <small class="foot-text">
-        &#169; Mariela Velez. All rights reserved.
-      </small>
-    </div>
-  </footer>
-
+      <div class="dark-mask"></div>
 
   </div>
+  <!-- /.section -->
+
+  <section id="exp">
+            <!-- *** SERVICES ***
+    _________________________________________________________ -->
+            <div class="section text-gradient" id="services">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h2 class="title" data-animate="fadeInDown">Experience</h2>
+                        <section class="cd-horizontal-timeline" style="position: relative; bottom: 25px;">
+                        	<div class="timeline">
+                        		<div class="events-wrapper">
+                        			<div class="events">
+                        				<ol>
+                        					<li><a href="#0" data-date="16/01/2014" class="selected">June 2012</a></li>
+                        					<li><a href="#0" data-date="28/02/2014">Aug 2012</a></li>
+                        					<li><a href="#0" data-date="20/04/2014">Jan 2013</a></li>
+                        					<li><a href="#0" data-date="20/05/2014">Aug 2014</a></li>
+                        					<li><a href="#0" data-date="09/07/2014">May 2015</a></li>
+                        					<li><a href="#0" data-date="30/08/2014">Aug 2016</a></li>
+                        					<li><a href="#0" data-date="15/09/2014">Jan 2017</a></li>
+                        					<li><a href="#0" data-date="01/11/2014">May 2017</a></li>
+                        					<li><a href="#0" data-date="10/12/2014">Jun 2017</a></li>
+                        					<li><a href="#0" data-date="19/01/2015">Sep 2017</a></li>
+                        					<li><a href="#0" data-date="03/03/2015">Dec 2017</a></li>
+                        				</ol>
+
+                        				<span class="filling-line" aria-hidden="true"></span>
+                        			</div> <!-- .events -->
+                        		</div> <!-- .events-wrapper -->
+
+                        		<ul class="cd-timeline-navigation">
+                        			<li><a href="#0" class="prev inactive">Prev</a></li>
+                        			<li><a href="#0" class="next">Next</a></li>
+                        		</ul> <!-- .cd-timeline-navigation -->
+                        	</div> <!-- .timeline -->
+
+                        	<div class="events-content">
+                        		<ol>
+                        			<li class="selected" data-date="16/01/2014">
+                        				<h2>High School Graduate</h2>
+                        				<em>June 2nd, 2012</em>
+                        				<p>
+                        					Graduated Summa Cum Laude from Tomball High School on June 2012. This fall I would be starting university education at the University of Texas at Austin. Current major: general biology and pre-health studies with a Jewish minor.
+                        				</p>
+                        			</li>
+
+                        			<li data-date="28/02/2014">
+                        				<h2>Undergraduate Student</h2>
+                        				<em>August, 2012</em>
+                        				<p>
+                        					Began undergaduate education at the University of Texas at Austin. Initially a human biology major.
+                        				</p>
+                        			</li>
+
+                        			<li data-date="20/04/2014">
+                        				<h2>Freshman Researcher</h2>
+                        				<em>January, 2013</em>
+                        				<p>
+                        					Participated in the Freshman Research Initiative. Prepared and conducted an experiment using crickets as my organism of study.
+                        				</p>
+                        			</li>
+
+                        			<li data-date="20/05/2014">
+                        				<h2>Undergraduate Bacteriology Researcher</h2>
+                        				<em>August, 2014 - June, 2016</em>
+                        				<p>
+                        					Undergraduate research focused on bacterial physiology and communication. Model organisms included <i>P. aeruginosa</i> and several species of streptococci. Responsible for growing and isolating samples.
+                        				</p>
+                        			</li>
+
+                        			<li data-date="09/07/2014">
+                        				<h2>Hospital Volunteer</h2>
+                        				<em>May, 2015</em>
+                        				<p>
+                        					Volunteer at the Texas Children's Hospital in Houston, Texas. Responsible for Spanish-English translations and communicating with low income families about available resources.
+                        				</p>
+                        			</li>
+
+                        			<li data-date="30/08/2014">
+                        				<h2>Clinical Bacteriology Student</h2>
+                        				<em>August, 2016 - January, 2017</em>
+                        				<p>
+                        					Student in a clinical bacteriology laboratory responsible for isolating and identifying bacterial species from various patient sources.
+                        				</p>
+                        			</li>
+
+                        			<li data-date="15/09/2014">
+                        				<h2>Undergraduate Virology Researcher</h2>
+                        				<em>January, 2017 - May, 2017</em>
+                        				<p>
+                        					Undergraduate research focused on viral pathogenesis in model organisms such as mice. Responsible for isolating and quantifying viral load.
+                        				</p>
+                        			</li>
+
+                        			<li data-date="01/11/2014">
+                        				<h2>UT Austin Alumni</h2>
+                        				<em>May, 2017</em>
+                        				<p>
+                        					Graduated the University of Texas at Austin with a Bachelor of Science in Microbiology and Infectious Diseases. 3.6 GPA.
+                        				</p>
+                        			</li>
+
+                        			<li data-date="10/12/2014">
+                        				<h2>Web Development Student</h2>
+                        				<em>June, 2017 - December, 2017</em>
+                        				<p>
+                        					Began an intensive full stack web development bootcamp dedicated to designing and buiding web applications focusing on skills such as JavaScript, HTML, CSS, JQuery, React.js, MySQL, and the MERN stack.
+                        				</p>
+                        			</li>
+
+                        			<li data-date="19/01/2015">
+                        				<h2>Freelance Full Stack Developer</h2>
+                        				<em>September, 2017 - November, 2017</em>
+                        				<p>
+                        					Worked as a project manager and full stack developer in a team of 4 to design and create a database backed website for a local Houston business. Lead the front end design team, communicated with the client, and facilitated project delivery.
+                        				</p>
+                        			</li>
+
+                        			<li data-date="03/03/2015">
+                        				<h2>Full Stack Web Developer</h2>
+                        				<em>December, 2017</em>
+                        				<p>
+                        					Graduated from my full stack flex bootcamp. Capable of both backend and frontend development. Specialise in frontend development with a focus on HTML, CSS, Bootstrap, Materialize, JavaScript, and JQuery as well as React.js.
+                        				</p>
+                        			</li>
+                        		</ol>
+                        	</div> <!-- .events-content -->
+                        </section>
+                    </div>
+                    <!-- /.12 -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.section -->
+
+            <!-- *** SERVICES END *** -->
+  </section>
+
+  <section id="proj">
+    <!-- *** REFERENCES IMAGE ***
+_________________________________________________________ -->
+    <div class="section" id="references">
+        <div class="container">
+            <div class="col-sm-12">
+
+                <div class="mb20">
+                    <h2 class="title" data-animate="fadeInUp">My work</h2>
+                    <p class="lead" data-animate="fadeInUp"> Work showing skill in different techologies, frameworks, and databases.</p>
+                </div>
+                <div class="row portfolio-row">
+                  <figure class="snip1401">
+                    <img class="img-portfolio" src="/images/majikbot.png" alt="image of majikbot" />
+                    <figcaption>
+                      <h3>MAJiKBot</h3>
+                      <p>An automated banking chatbot</p>
+                      <br /><br />
+                      <p>
+                        React.js | IBM Watson | MySQL
+                      </p>
+                    </figcaption><i class="ion-ios-home-outline"></i>
+                    <a target="_blank" href="https://majikbot.herokuapp.com/"></a>
+                  </figure>
+                  <figure class="snip1401">
+                    <img class="img-portfolio" src="/images/fitnesskamb.png" alt="screenshot of fitnesskamb" />
+                    <figcaption>
+                      <h3>FitnessKAMB</h3>
+                      <p>Online Fitness Resource</p>
+                      <br /><br />
+                      <p>
+                        HTML5/CSS | Google API | Firebase
+                      </p>
+                    </figcaption><i class="ion-ios-personadd-outline"></i>
+                    <a target="_blank" href="https://marielavlz.github.io/FitnessKAMB/"></a>
+                  </figure>
+                  <figure class="snip1401">
+                    <img class="img-portfolio" src="/images/asaplocksmith.png" alt="screenshot of asaplocksmith" />
+                    <figcaption>
+                      <h3>ASAP Locksmith</h3>
+                      <p>Task manager and business site</p>
+                      <br />
+                      <p>
+                        Handlebars | MySQL | Express/CRUD
+                      </p>
+                    </figcaption><i class="ion-ios-location-outline"></i>
+                    <a target="_blank" href="https://asaplocksmith.herokuapp.com/"></a>
+                  </figure>
+                </div>
+                <div class="row portfolio-row" style="margin-bottom: 80px;">
+                  <figure class="snip1401">
+                    <img class="img-portfolio" src="/images/nytscraper.png" alt="new york times webscraper" />
+                    <figcaption>
+                      <h3>Webscraper</h3>
+                      <p>A webscraper of the New York Times</p>
+                      <br />
+                      <p>
+                        MongoDB | Mongoose | Express
+                      </p>
+                    </figcaption><i class="ion-ios-home-outline"></i>
+                    <a target="_blank" href="https://webscrapervlz.herokuapp.com/"></a>
+                  </figure>
+                  <figure class="snip1401">
+                    <img class="img-portfolio" src="images/crystalcollector.png" alt="screenshot of crystal collector" />
+                    <figcaption>
+                      <h3>Crystal Collector</h3>
+                      <p>A guessing game application</p>
+                      <br />
+                      <p>
+                        HTML5 | JavaScript | JQuery
+                      </p>
+                    </figcaption><i class="ion-ios-personadd-outline"></i>
+                    <a target="_blank" href="https://marielavlz.github.io/week-4-game/"></a>
+                  </figure>
+                  <figure class="snip1401">
+                    <img class="img-portfolio" src="/images/lotrtrivia.png" alt="lord of the rings trivia game" />
+                    <figcaption>
+                      <h3>Trivia Game</h3>
+                      <p>A Lord of the Rings Trivia Game</p>
+                      <br />
+                      <p>
+                        HTML5 | JavaScript | JQuery
+                      </p>
+                    </figcaption><i class="ion-ios-location-outline"></i>
+                    <a href="#"></a>
+                  </figure>
+                </div>
+            </div>
+            <!-- /.12 -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.section -->
+
+    <!-- *** REFERENCES END *** -->
+  </section>
+
+  <section id="contact">
+    <!-- *** CONTACT ***
+_________________________________________________________ -->
+
+    <div class="section" style="background-color: transparent; color: #fff; height: 760px;"data-animate="bounceIn">
+        <div class="container">
+            <div class="col-md-12">
+                <h2 class="title">Contact me</h2>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                      <form id="contact-form" method="post" action="contact.php">
+                          <div class="messages">
+                          </div>
+                          <div class="controls">
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <input type="text" name="name" class="form-control" placeholder="Your firstname *" required="required">
+                                  </div>
+                                  <div class="col-md-6">
+                                      <input type="text" name="surname" class="form-control" placeholder="Your lastname *" required="required">
+                                  </div>
+                                  <div class="col-md-6">
+                                      <input type="text" name="email" class="form-control" placeholder="Your email *" required="required">
+                                  </div>
+                                  <div class="col-md-6">
+                                      <input type="text" name="phone" class="form-control" placeholder="Your phone">
+                                  </div>
+                                  <div class="col-md-12">
+                                      <textarea name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
+                                  </div>
+                                  <div class="col-md-12 text-center">
+                                      <input type="submit" class="btn btn-primary btn-lg" value="Send message">
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /.12 -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.section -->
+
+    <!-- *** CONTACT END *** -->
+
+    <!--Footer-->
+
+    <footer class="container-fluid footer">
+      <div class="footer-content">
+        <h3>CONNECT WITH ME</h3>
+          <div class="social-links">
+            <span><a href="https://www.linkedin.com/in/mariela-velez-natal/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
+            <span><a href="https://github.com/marielavlz" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
+            <span><a target="_blank" href="https://twitter.com/mari_withani" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
+            <span><a href="https://codepen.io/marivlz/" target="_blank"><i class="fa fa-codepen fa-2x"></i></a></span>
+          </div>
+      </div>
+      <div class="center-this-thang">
+        <small class="foot-text">
+          &#169; Mariela Velez. All rights reserved.
+        </small>
+      </div>
+    </footer>
+
+</div>
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -831,11 +525,13 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+
   <!-- Personal JS and Jquery -->
   <script src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/wow.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
   <script type="text/javascript" src="js/javascript.js"></script>
-  <script type="text/javascript" src="js/main.js"></script> <!-- Resource jQuery -->
+  <script type="text/javascript" src="js/secondmain.js"></script> <!-- Resource jQuery -->
+
 </body>
 </html>
