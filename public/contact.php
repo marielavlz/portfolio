@@ -3,8 +3,8 @@
 /**
  * configure here
  */
-$from = 'IT WORKER <it@domain.com>';
-$sendTo = 'IT WORKER <it@domain.com>';
+$from = $_POST['name'];
+$sendTo = 'Mariela Velez <mari.vlz13@gmail.com.com>';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
 $htmlHeader = '';
@@ -22,7 +22,7 @@ use Nette\Mail\Message,
 
 /* require framework */
 
-require 'php/Nette/nette.phar';
+require '/php/Nette/nette.phar';
 
 /* configure neccessary */
 
@@ -71,7 +71,3 @@ if ($httpRequest->isAjax()) {
     $response = new \Nette\Application\Responses\JsonResponse($responseArray);
     $response->send($httpRequest, $httpResponse);
 }
-
-
-
-
