@@ -65,12 +65,6 @@ $('a[href*="#"]')
 
   })(jQuery);
 
-  // input text for typing animation
-  $("#holder").writeText("FULL STACK WEB DEVELOPER + MICROBIOLOGIST");
-
-  // initialize wow.js
-  new WOW().init();
-
   // The MIT License (MIT)
 
   // Typed.js | Copyright (c) 2014 Matt Boldt | www.mattboldt.com
